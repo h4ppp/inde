@@ -1,0 +1,128 @@
+extends ../includes/_template.pug
+
+block content
+
+    main.main
+        .container
+            .main-wrapper.posr
+                .main-slider.swiper
+                    .main-next.posa.cursor
+                    .swiper-wrapper
+                        .swiper-slide
+                            .main-item.posr
+                                a.main-item__link.db.posa(href="#")
+                                .main-item__title На улице Тельмана откроется заведение от команды кофейни Botanica
+                                .main-item__subtitle Кирилл Сафронов
+                        .swiper-slide
+                            .main-item.posr
+                                a.main-item__link.db.posa(href="#")
+                                .main-item__title Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village 
+                                .main-item__subtitle Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.
+                        .swiper-slide
+                            .main-item.posr
+                                a.main-item__link.db.posa(href="#")
+                                .main-item__title Свобода воли vs нейробиология — как люди выбирают?
+                                .main-item__subtitle Что посмотреть
+                        .swiper-slide
+                            .main-item.posr
+                                a.main-item__link.db.posa(href="#")
+                                .main-item__title Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17
+                        .swiper-slide
+                            .main-item.posr
+                                a.main-item__link.db.posa(href="#")
+                                .main-item__title «Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова
+                        .swiper-slide
+                            .main-item.posr
+                                a.main-item__link.db.posa(href="#")
+                                .main-item__title На улице Тельмана откроется заведение от команды кофейни Botanica
+                                .main-item__subtitle Кирилл Сафронов
+                        .swiper-slide
+                            .main-item.posr
+                                a.main-item__link.db.posa(href="#")
+                                .main-item__title Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village 
+                                .main-item__subtitle Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.
+                        .swiper-slide
+                            .main-item.posr
+                                a.main-item__link.db.posa(href="#")
+                                .main-item__title Свобода воли vs нейробиология — как люди выбирают?
+                                .main-item__subtitle Что посмотреть
+                        .swiper-slide
+                            .main-item.posr
+                                a.main-item__link.db.posa(href="#")
+                                .main-item__title Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17
+                        .swiper-slide
+                            .main-item.posr
+                                a.main-item__link.db.posa(href="#")
+                                .main-item__title «Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова
+
+    section.home-slider
+        .container
+            .home-slider__wrapper.posr
+                .home-slider__inner.swiper
+                    .main-next.posa.cursor
+                    .swiper-wrapper
+                        .swiper-slide
+                            .home-slider__item.posr
+                                a.home-slider__link.link.db.posa(href="#")
+                                img.home-slider__img.img(src="img/home-slider-1.png", alt="")
+                                .home-slider__title Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и&nbsp;продавец в&nbsp;Surf Village 
+                                .home-slider__subtitle Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.
+                        .swiper-slide
+                            .home-slider__item.posr
+                                a.home-slider__link.link.db.posa(href="#")
+                                img.home-slider__img.img(src="img/home-slider-2.png", alt="")
+                                .home-slider__title Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17
+                                .home-slider__subtitle Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.
+
+
+    section.home-blog
+        .container
+            .home-blog__title.center Город
+            .home-blog__item.df.jcsb.posr
+                .home-blog__item-left.posr
+                    .home-blog__cat.dif.aic.posa Новое место
+                    a.home-blog__item-img.db.overflow(href="#")
+                        img.img(src="img/blog-1.png", alt="")
+                .home-blog__item-right
+                    a.home-blog__item-title.db.link.transition(href="#") Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе
+                    .home-blog__item-subtitle Инде  рассказывает, чем заняться в Набережных Челнах в последний месяц лета.
+                    a.home-blog__item-btn.btn(href="#") Читать статью
+            .home-blog__slider.swiper(data-slider="1")
+                include ../includes/_slider.pug
+
+    section.home-blog
+        .container
+            .home-blog__title.center Путешествия
+            .home-blog__item.df.jcsb.posr
+                .home-blog__item-left.posr
+                    .home-blog__cat.dif.aic.posa Новое место
+                    a.home-blog__item-img.db.overflow(href="#")
+                        img.img(src="img/blog-1.png", alt="")
+                .home-blog__item-right
+                    a.home-blog__item-title.db.link.transition(href="#") Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе
+                    .home-blog__item-subtitle Инде  рассказывает, чем заняться в Набережных Челнах в последний месяц лета.
+                    a.home-blog__item-btn.btn(href="#") Читать статью
+            .home-blog__slider.swiper(data-slider="2")
+                include ../includes/_slider.pug
+
+    section.home-blog
+        .container
+            .home-blog__title.center Искусство
+            .home-blog__item.df.jcsb.posr
+                .home-blog__item-left.posr
+                    .home-blog__cat.dif.aic.posa Новое место
+                    a.home-blog__item-img.db.overflow(href="#")
+                        img.img(src="img/blog-1.png", alt="")
+                .home-blog__item-right
+                    a.home-blog__item-title.db.link.transition(href="#") Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе
+                    .home-blog__item-subtitle Инде  рассказывает, чем заняться в Набережных Челнах в последний месяц лета.
+                    a.home-blog__item-btn.btn(href="#") Читать статью
+            .home-blog__slider.swiper(data-slider="3")
+                include ../includes/_slider.pug
+
+
+    .container
+        a.banner.db.overflow.link(href="#")
+            img.img(src="img/banner.png", alt="")
+    
+    include ../includes/_contact.pug

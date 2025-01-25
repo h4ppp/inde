@@ -1,0 +1,80 @@
+footer.footer
+    .container
+        .footer-list.row.footer-top
+            .footer-block.col
+                a.footer-logo.dif.link(href="index.html")
+                    img.img(src="img/logo.svg", alt="")
+            .footer-block.col
+                nav.footer-nav
+                    ul
+                        li
+                            a(href="#") Город
+                        li
+                            a(href="#") Еда
+                        li
+                            a(href="#") Герои
+            .footer-block.col
+                nav.footer-nav
+                    ul
+                        li
+                            a(href="#") Путешествия
+                        li
+                            a(href="#") Искусство
+                        li
+                            a(href="#") Прошлое
+            .footer-block.col
+                nav.footer-nav
+                    ul
+                        li
+                            a(href="#") О проекте
+                        li
+                            a(href="#") Амбассадоры «Инде»
+            .footer-block.col
+                nav.footer-nav
+                    ul
+                        li
+                            a(href="#") Рекламодателям
+                        li
+                            a(href="#") Вакансии
+        .footer-line
+        .footer-list.row.footer-center
+            .footer-block.col
+            .footer-block.col
+                .footer-item
+                    .footer-item__title Общий контакт редакции:
+                    .footer-item__text
+                        a(href="mailto:hello@inde.io") hello@inde.io
+                    .footer-item__text
+                        a(href="#" target="_blank") VK
+                        a(href="#" target="_blank") Telegram
+            .footer-block.col
+                .footer-item
+                    .footer-item__title Обсудить рекламу:
+                    .footer-item__text
+                        a(href="mailto:ad@inde.io") ad@inde.io
+            .footer-block.col
+                .footer-item
+                    .footer-item__title Некоммерческие проекты и&nbsp;информационное партнерство:
+                    .footer-item__text
+                        a(href="mailto:pr@inde.io") pr@inde.io
+        .footer-list.row.footer-bottom
+            .footer-block.col
+                .footer-bottom__text Инде. 2015-2024
+            .footer-block.col
+                .footer-bottom__text
+                    a.dif.link.transition(href="#") Соглашения и правила
+        
+
+
+.modals
+    .modal#success(data-modal)
+        .modal-overlay(data-modal-overlay)
+        .modal-list
+            .modal-container
+                .modal-close(data-modal-close)
+                svg.modal-icon
+                    use(xlink:href="img/sprite.svg#modal-check")
+                .center
+                    .modal-title Спасибо!
+                    .modal-subtitle Ваша заявка успешно отправлена
+                img.modal-logo.img(src="img/logo.svg", alt="")

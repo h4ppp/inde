@@ -1,0 +1,992 @@
+@import "vars"
+@import "fonts"
+
+input, button, textarea, select
+	font-family: $font
+
+a
+	text-decoration-style: solid
+	text-decoration-skip-ink: none
+	text-decoration-thickness: auto
+	text-underline-offset: auto
+	text-underline-position: from-font
+
+body
+	font-family: $font
+	background: #F4F4F4
+
+html, body
+	padding: 0
+	margin: 0
+	height: 100vh
+	height: var(--doc-height)
+
+.page-wrapper
+	overflow: hidden
+	position: relative
+	min-height: 100vh
+	padding-top: 106px
+
+.container
+	width: 1376px
+
+.modal
+	height: 100%
+	opacity: 1
+
+.modal-overlay
+	height: 100%
+	
+.modal-list
+	height: 100%
+
+
+
+.top-fixed
+	position: fixed
+	left: 0
+	top: 0
+	width: 100%
+	z-index: 30
+
+
+.green-slider
+	background: #00FF64
+	.swiper-slide
+		width: auto !important
+	.swiper-wrapper
+		transition-timing-function: linear !important
+	&__text
+		white-space: nowrap
+		color: #969
+		font-size: 11px
+		font-weight: 500
+		line-height: normal
+		display: flex
+		align-items: center
+		height: 34px
+
+
+.header
+	background: #000
+	&-list
+		height: 72px
+		padding-top: 7px
+	&-search
+		width: 550px
+		max-width: 100%
+		&__clear
+			top: 2px
+			right: 271px
+			width: 20px
+			height: 20px
+			background-image: url('../img/clear.svg')
+			background-repeat: no-repeat
+			opacity: 0
+			visibility: hidden
+			pointer-events: none
+		&__btn
+			width: 261px
+			height: 24px
+			background: #fff
+			border: 1px solid #000
+			color: #464646
+			font-size: 14px
+			font-weight: 500
+			line-height: 16px
+			opacity: 0
+			visibility: hidden
+			pointer-events: none
+			&:hover
+				color: #000
+		&__icon
+			width: 20px
+			min-width: 20px
+			height: 20px
+			margin-right: 10px
+			border: none
+			background: transparent
+			cursor: pointer
+			padding: 0
+			user-select: none
+			svg
+				fill: #969696
+				width: 20px
+				height: 20px
+			&:hover
+				svg
+					fill: #fff
+		&__input
+			border: 1px solid #969696
+			background: transparent
+			transition: all 0.4s
+			padding-left: 9px
+			height: 24px
+			color: rgba(150, 150, 150, 0.50)
+			font-size: 11px
+			font-weight: 500
+			line-height: normal
+			&::placeholder
+				color: #fff
+			&:hover, &:focus
+				border-color: #fff
+				color: #fff
+		&.active
+			width: 100%
+			.header-search__btn
+				opacity: 1
+			.header-search__input
+				flex-grow: 1
+			.header-search__input, .header-search__input:hover, .header-search__input:focus
+				background: #fff
+				border-color: #000
+				color: #464646
+				font-size: 14px
+				font-weight: 500
+				line-height: 16px
+			.header-search__input::placeholder
+				color: #464646
+			.header-search__clear, .header-search__btn
+				opacity: 1
+				visibility: visible
+				pointer-events: auto
+	&-burger
+		svg
+			width: 20px
+			height: 20px
+			stroke: #fff
+		&:hover
+			svg
+				stroke: #969696
+	&-logo
+		margin-left: 6px
+		margin-right: 49px
+	&-nav
+		padding: 0 0 0 30px
+		margin: 12px 0 0 0
+		ul
+			padding: 0
+			margin: 0
+			list-style-type: none
+			display: flex
+			align-items: center
+			li
+				display: inline-flex
+				margin-right: 96px
+				position: relative
+				a
+					text-decoration: none
+					outline: none
+					display: inline-flex
+					transition: all 0.4s
+					color: #fff
+					font-size: 11px
+					white-space: nowrap
+					font-weight: 500
+					line-height: normal
+				&:hover
+					& > a
+						color: #969696
+				ul
+					position: absolute
+					left: -6px
+					top: 100%
+					padding: 24px 10px 16px
+					display: block
+					transition: all 0.4s
+					opacity: 0
+					visibility: hidden
+					pointer-events: auto
+					&::before
+						content: ""
+						position: absolute
+						left: 0
+						top: 0
+						width: 3000px
+						height: 100%
+						background: #000
+					li
+						display: block
+						margin: 10px 0 0 0
+						&:first-child
+							margin: 0
+				&:hover ul
+					opacity: 1
+					visibility: visible
+					pointer-events: auto
+				
+
+
+.modal
+	&-container
+		padding: 24px
+		border-radius: 30px
+		background: rgba(0, 0, 0, 0.85)
+		border-radius: 30px
+		width: 540px
+	&-list
+		padding: 16px
+	&-close
+		width: 20px
+		height: 20px
+		background-image: url('../img/modal-close.svg')
+		background-repeat: no-repeat
+		background-position: center
+		right: 24px
+		top: 24px
+		z-index: 3
+		&:hover
+			opacity: 0.7
+	&-title
+		margin: 24px 0 16px
+		color: #fff
+		font-family: $font2
+		font-size: 32px
+		font-weight: 700
+		line-height: 32px
+	&-subtitle
+		color: #fff
+		font-size: 14px
+		font-weight: 500
+		line-height: 16px
+	&-logo
+		width: 113px
+		margin: 40px auto 0
+	&-icon
+		width: 32px
+		height: 32px
+		margin: 0 auto
+
+
+
+
+
+.footer
+	background: #000
+	padding: 50px 0 20px
+	margin-top: auto
+	&-block
+		width: 20%
+	&-nav
+		padding: 0
+		margin: 0
+		ul
+			padding: 0
+			margin: 0
+			list-style-type: none
+			li
+				display: block
+				margin-top: 24px
+				&:first-child
+					margin-top: 0
+				a
+					text-decoration: none
+					outline: none
+					display: inline-flex
+					color: #fff
+					font-size: 18px
+					font-weight: 500
+					line-height: 20px
+					transition: all 0.4s
+					&:hover
+						color: #969696
+						text-decoration: none
+	&-bottom
+		&__text
+			margin-top: 36px
+			color: #969696
+			font-size: 11px
+			font-weight: 500
+			line-height: normal
+			a
+				color: #969696
+				&:hover
+					color: #fff
+	&-line
+		margin: 48px 0 20px
+		height: 1px
+		background: #969696
+		width: 100%
+	&-item
+		&__title
+			padding-bottom: 4px
+			color: #fff
+			font-size: 18px
+			font-weight: 500
+			line-height: 20px
+		&__text
+			color: #969696
+			font-size: 18px
+			font-weight: 500
+			line-height: 20px
+			margin-right: -16px
+			margin-top: 20px
+			a
+				color: #969696
+				text-decoration-line: underline
+				text-decoration-style: solid
+				text-decoration-skip-ink: none
+				text-decoration-thickness: auto
+				text-underline-offset: auto
+				text-underline-position: from-font
+				transition: all 0.4s
+				display: inline-flex
+				margin-right: 16px
+				&:hover
+					color: #fff
+
+
+.banner
+	border-radius: 30px
+	margin-bottom: 64px
+	margin-top: 64px
+	img
+		width: 100%
+		object-fit: cover
+		min-height: 214px
+
+
+
+
+.btn
+	text-decoration: none
+	outline: none
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: all 0.4s
+	cursor: pointer
+	border: 1px solid #000
+	color: #000
+	font-size: 14px
+	font-weight: 500
+	line-height: 16px
+	height: 40px
+	text-align: center
+	background: transparent
+	&:hover
+		background: #000
+		color: #fff
+
+		
+
+.contact
+	padding-bottom: 32px
+	&-wrapper
+		padding: 15px 0
+		border-top: 1px solid #000
+		border-bottom: 1px solid #000
+		margin-bottom: 24px
+	&-bottom
+		&__wrapper
+			width: 596px
+			max-width: 100%
+			margin-left: auto
+		&__title
+			padding-left: 56px
+			color: #464646
+			font-family: $font2
+			font-size: 20px
+			font-weight: 700
+			line-height: 20px
+			margin-bottom: 20px
+	&-form
+		&__list
+			align-items: flex-end
+		&__left
+			width: 317px
+		&__right
+			width: 261px
+		&__input
+			margin-bottom: 16px
+			&:last-child
+				margin-bottom: 0
+			input
+				width: 100%
+				height: 40px
+				background: transparent
+				border: 1px solid #000
+				padding-left: 9px
+				color: #000
+				font-size: 11px
+				font-weight: 500
+				line-height: normal
+				&::placeholder
+					color: rgba(150, 150, 150, 0.50)
+			b
+				width: 56px
+				min-width: 56px
+				white-space: nowrap
+				color: #464646
+				font-size: 11px
+				font-weight: 500
+				line-height: normal
+		&__policy
+			margin-bottom: 16px
+			order: -1
+			color: rgba(150, 150, 150, 0.50)
+			font-size: 11px
+			font-weight: 500
+			line-height: normal
+			a
+				color: #000
+				font-size: 11px
+				font-weight: 500
+				line-height: normal
+				text-decoration-line: underline
+	&-right
+		width: 503px
+	&-left
+		width: calc(100% - 503px - 18px)
+	&-img
+		width: 100%
+		border-radius: 30px
+		object-fit: cover
+		min-height: 100%
+	&-mobile
+		width: 100%
+		height: auto
+		border-radius: 16px
+	&-links
+		padding-top: 3px
+		width: 261px
+		max-width: 100%
+	&-link
+		margin-top: 24px
+		&::after
+			content: ""
+			display: block
+			width: 7px
+			min-width: 7px
+			height: 12px
+			margin-left: 10px
+			transition: all 0.4s
+			background-image: url('../img/arrow-2.svg')
+		&:hover
+			&::after
+				filter: brightness(0) invert(1)
+	&-title
+		color: #464646
+		font-family: $font2
+		font-size: 56px
+		font-weight: 700
+		line-height: 56px
+	&-subtitle
+		margin-top: 24px
+		color: #464646
+		font-size: 18px
+		font-weight: 500
+		line-height: 20px
+	&-bottomText
+		padding-top: 24px
+		margin-top: auto
+		color: #464646
+		font-size: 11px
+		font-weight: 500
+		line-height: normal
+
+
+
+.select
+	position: relative
+	height: 40px
+	width: 100%
+	select
+		display: none
+	.nice-select
+		width: 100%
+		height: 100%
+		display: flex
+		border-radius: 0
+		background: transparent
+		border: 1px solid #000
+		padding-left: 9px
+		font-size: 11px
+		font-weight: 500
+		line-height: normal
+		color: rgba(150, 150, 150, 0.50)
+		align-items: center
+		&::after
+			display: none
+		&::before
+			content: ""
+			position: absolute
+			right: 10px
+			top: calc(50% - 3px)
+			width: 12px
+			height: 6px
+			background-repeat: no-repeat
+			background-position: center
+			background-image: url('../img/arrow.svg')
+
+.nice-select .nice-select-dropdown
+	box-shadow: none
+	border: 1px solid #000
+	width: 100%
+	border-radius: 0
+.nice-select .list
+	border-radius: 0
+.nice-select .option.selected
+	background: #000 !important
+	color: #fff
+	font-weight: normal
+.nice-select .option
+	font-size: 11px
+	font-weight: 500
+	color: #000
+	font-weight: normal
+
+
+
+.header
+	&-mobile__search
+		user-select: none
+		svg
+			width: 20px
+			height: 20px
+			fill: #fff
+
+
+
+
+
+.main
+	margin-bottom: 16px
+	padding-top: 18px
+	&-slider
+		border-bottom: 1px solid #000
+		padding-bottom: 9px
+		position: static
+		&::before
+			content: ""
+			position: absolute
+			right: 0
+			top: 0
+			height: 100%
+			width: 1px
+			background: #F4F4F4
+	.swiper-slide
+		width: 279px
+		min-width: 279px
+		height: auto !important
+	.swiper-wrapper
+		display: flex
+		align-items: stretch
+	&-item
+		padding: 0 10px 6px
+		border-right: 1px solid #000
+		min-height: 100%
+		&__link
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			z-index: 3
+		&__title
+			color: #464646
+			font-size: 18px
+			font-weight: 500
+			line-height: 20px
+			width: 230px
+			max-width: 100%
+		&__subtitle
+			margin-top: 10px
+			color: #464646
+			font-size: 11px
+			font-weight: 500
+			line-height: normal
+	&-next
+		top: 50%
+		transform: translateY(-50%)
+		left: calc(100% + 10px)
+		width: 10px
+		height: 16px
+		background-image: url('../img/next-arrow.svg')
+		background-repeat: no-repeat
+
+
+
+
+.page-menu
+	position: fixed
+	bottom: 0
+	left: 0
+	z-index: 40
+	width: 294px
+	background: rgba(0, 0, 0, 0.85)
+	height: calc(100% - 106px)
+	transition: all 0.7s
+	left: -300px
+	overflow-y: auto
+	scrollbar-color: white black
+	scrollbar-width: thin
+
+	&.open
+		left: 0
+	&__container
+		padding: 35px 32px
+	&__nav
+		padding: 0
+		margin: 0
+		ul
+			padding: 0
+			margin: 0
+			list-style-type: none
+			li
+				display: block
+				margin-top: 24px
+				&:first-child
+					margin-top: 0
+				a
+					text-decoration: none
+					outline: none
+					display: block
+					color: #fff
+					font-size: 24px
+					font-weight: 500
+					line-height: 24px
+			ul
+				padding-top: 16px
+				li
+					margin-top: 8px
+					a
+						font-size: 11px
+						font-weight: 500
+						line-height: normal
+
+
+.header-burger
+	svg
+		&:last-child
+			display: none
+	&.active
+		svg
+			&:first-child
+				display: none
+			&:last-child
+				display: block
+
+
+
+.home-slider
+	&__link
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+		z-index: 3
+	&__img
+		width: 100%
+		height: 505px
+		object-fit: cover
+		border-radius: 30px
+	&__title
+		width: 280px
+		max-width: 100%
+		color: #4D4D4D
+		font-size: 18px
+		font-weight: 500
+		line-height: 20px
+		margin-top: 10px
+		transition: all 0.4s
+	&__subtitle
+		margin-top: 10px
+		width: 201px
+		max-width: 100%
+		color: #4D4D4D
+		font-size: 11px
+		font-weight: 500
+		line-height: normal
+	.swiper-slide
+		width: 818px
+		min-width: 818px
+	&__item
+		&:hover
+			.home-slider__title
+				color: #000
+	&__inner
+		position: static
+	.main-next
+		top: 244px
+		transform: none
+
+
+
+
+.home-blog
+	padding-top: 64px
+	&__title
+		padding: 7px 0
+		border-top: 1px solid #000
+		border-bottom: 1px solid #000
+		color: #464646
+		font-family: $font2
+		font-size: 32px
+		font-weight: 700
+		line-height: 32px
+		margin-bottom: 18px
+	&__cat
+		top: 16px
+		left: 16px
+		z-index: 5
+		border: 1px solid rgba(70, 70, 70, 0.10)
+		background: #fff
+		padding: 4px 10px
+		color: #464646
+		font-size: 11px
+		font-weight: 500
+		line-height: normal
+	&__item
+		&-img
+			height: 505px
+			border-radius: 30px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+		&-left
+			width: calc(100% - 558px)
+		&-right
+			width: 540px
+		&-title
+			color: #464646
+			font-family: $font2
+			font-size: 56px
+			font-weight: 700
+			line-height: 56px
+		&-subtitle
+			margin: 24px 0 32px
+			color: #464646
+			font-size: 18px
+			font-weight: 500
+			line-height: 20px
+		&-btn.btn
+			width: 261px
+			&::before
+				content: ""
+				display: block
+				width: 7px
+				min-width: 7px
+				height: 12px
+				margin-right: 10px
+				transition: all 0.4s
+				background-image: url('../img/arrow-2.svg')
+			&:hover
+				&::before
+					filter: brightness(0) invert(1)
+	&__slider
+		margin-top: 18px
+	.swiper-slide
+		height: auto !important
+		width: 260px
+		min-width: 260px
+		transition: width 0.5s
+	.swiper-wrapper
+		display: flex
+		align-items: stretch
+	&__box
+		padding-bottom: 80px
+		min-height: 100%
+		&-img
+			height: 360px
+			img
+				width: 100%
+				height: 100%
+				object-fit: cover
+				border-radius: 30px
+		&-title
+			margin-top: 12px
+			width: 261px
+			max-width: 100%
+			color: #464646
+			font-size: 18px
+			font-weight: 500
+			line-height: 20px
+			transition: all 0.4s
+		&:hover
+			.home-blog__box-title
+				color: #000
+		&-subtitle
+			margin-top: 8px
+			color: #464646
+			font-size: 11px
+			font-weight: 500
+			line-height: normal
+			width: 260px
+			max-width: 100%
+		.home-blog__item-btn.btn
+			left: 0
+			bottom: 0
+			position: absolute
+			opacity: 0
+	.swiper-slide-active
+		width: 542px
+		min-width: 542px
+		.home-blog__item-btn.btn
+			opacity: 1 !important
+	&__arrows
+		right: 0
+		bottom: 0
+		z-index: 4
+		height: 40px
+	&__arrow
+		position: relative
+		width: 37px
+		height: 34px
+		margin-left: 8px
+		&:hover
+			opacity: 0.7
+		&::before
+			content: ""
+			position: absolute
+			right: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background-image: url('../img/home-arrow.svg')
+			background-repeat: no-repeat
+	&__prev
+		&::before
+			transform: rotate(180deg)
+
+
+
+.header-search
+	z-index: 10
+.header-search__results
+	position: absolute
+	opacity: 0
+	pointer-events: none
+	top: calc(100% + 8px)
+	left: 0
+	width: 100%
+	transition: opacity 0.4s
+	padding: 32px 24px 45px
+	background: rgba(0, 0, 0, 0.85)
+	&-item
+		margin-top: 24px
+		&:first-child
+			margin-top: 0
+	&-title
+		color: #fff
+		font-size: 14px
+		font-weight: 700
+		line-height: 16px
+		text-decoration-line: underline
+	&-subtitle
+		margin-top: 4px
+		color: #969696
+		font-size: 14px
+		font-weight: 400
+		line-height: 16px
+	&-btn.btn
+		color: #fff
+		border-color: #fff
+		margin-top: 32px
+		width: 213px
+		&::before
+			content: ""
+			display: block
+			width: 7px
+			min-width: 7px
+			height: 12px
+			margin-right: 10px
+			transition: all 0.4s
+			background-image: url('../img/arrow-2.svg')
+			filter: brightness(0) invert(1)
+		&:hover
+			color: #fff
+			border-color: #fff
+			opacity: 0.7
+	
+
+
+.header-search.active
+	.header-search__results
+		opacity: 1
+		pointer-events: auto
+
+
+
+
+.mobile-search
+	position: fixed
+	bottom: 0
+	height: calc(100% - 74px)
+	background: #000
+	z-index: 29
+	overflow-y: auto
+	width: 100%
+	transition: all 0.6s
+	opacity: 0
+	visibility: hidden
+	pointer-events: none
+	&.open
+		opacity: 1
+		visibility: visible
+		pointer-events: auto
+	&__container
+		padding: 24px 0 32px
+		margin: 0 auto
+		min-height: 100%
+	&__input
+		background: #000
+		border: 1px solid #969696
+		padding: 0 0 0 9px
+		width: 100%
+		display: flex
+		align-items: center
+		color: #fff
+		height: 30px
+		font-size: 14px
+		font-weight: 500
+		line-height: 16px
+		margin-bottom: 32px
+		&::placeholder
+			color: rgba(150, 150, 150, 0.50)
+	&__results
+		&-item
+			margin-bottom: 24px
+			display: none
+		&-title
+			color: #fff
+			font-size: 14px
+			font-weight: 700
+			line-height: 16px
+			text-decoration-line: underline
+		&-subtitle
+			margin-top: 4px
+			color: #969696
+			font-size: 14px
+			font-weight: 400
+			line-height: 16px
+			text-decoration: none
+			outline: none
+	.header-search__results-btn.btn
+		margin-top: auto
+		width: 100%
+		display: none
+
+
+
+.mobile-search.active
+	.header-search__results-btn.btn
+		display: flex
+	.mobile-search__results-item
+		display: block
+
+
+.header-mobile__search
+	svg
+		&:last-child
+			display: none
+	&.active
+		svg
+			&:first-child
+				display: none
+			&:last-child
+				display: block
+
+
+
+@import "media" 
