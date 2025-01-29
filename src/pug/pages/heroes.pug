@@ -1,0 +1,143 @@
+extends ../includes/_template.pug
+
+block content
+
+    .color-wrapper.turquoise-block.index
+
+        .left-line
+            span.accent-color Герои
+
+        main.main
+            .container
+                .main-wrapper.posr
+                    .main-slider.swiper
+                        .main-next.posa.cursor
+                        .swiper-wrapper
+                            .swiper-slide
+                                .main-item.posr
+                                    a.main-item__link.db.posa(href="#")
+                                    .main-item__title.accent-color На улице Тельмана откроется заведение от команды кофейни Botanica
+                                    .main-item__subtitle Кирилл Сафронов
+                            .swiper-slide
+                                .main-item.posr
+                                    a.main-item__link.db.posa(href="#")
+                                    .main-item__title.accent-color Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village 
+                                    .main-item__subtitle Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.
+                            .swiper-slide
+                                .main-item.posr
+                                    a.main-item__link.db.posa(href="#")
+                                    .main-item__title.accent-color Свобода воли vs нейробиология — как люди выбирают?
+                                    .main-item__subtitle Что посмотреть
+                            .swiper-slide
+                                .main-item.posr
+                                    a.main-item__link.db.posa(href="#")
+                                    .main-item__title.accent-color Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17
+                            .swiper-slide
+                                .main-item.posr
+                                    a.main-item__link.db.posa(href="#")
+                                    .main-item__title.accent-color «Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова
+                            .swiper-slide
+                                .main-item.posr
+                                    a.main-item__link.db.posa(href="#")
+                                    .main-item__title.accent-color На улице Тельмана откроется заведение от команды кофейни Botanica
+                                    .main-item__subtitle Кирилл Сафронов
+                            .swiper-slide
+                                .main-item.posr
+                                    a.main-item__link.db.posa(href="#")
+                                    .main-item__title.accent-color Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village 
+                                    .main-item__subtitle Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.
+                            .swiper-slide
+                                .main-item.posr
+                                    a.main-item__link.db.posa(href="#")
+                                    .main-item__title.accent-color Свобода воли vs нейробиология — как люди выбирают?
+                                    .main-item__subtitle Что посмотреть
+                            .swiper-slide
+                                .main-item.posr
+                                    a.main-item__link.db.posa(href="#")
+                                    .main-item__title.accent-color Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17
+                            .swiper-slide
+                                .main-item.posr
+                                    a.main-item__link.db.posa(href="#")
+                                    .main-item__title.accent-color «Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова
+
+
+        .breadcrumbs
+            .container
+                ul.breadcrumbs-list
+                    li
+                        a(href="#") Главная
+                    li Герои
+
+        main.page-top
+            .container
+                .page-top__list.df.aic.fxw.jcsb
+                    h1.page-top__title.accent-color Герои
+                    .page-top__subtitle.maxw Рассказываем о выдающихся людях, нашего города
+
+        main.city
+            .container
+                .city-top
+                    .home-blog__item.df.jcsb.posr
+                        .home-blog__item-left.posr
+                            .home-blog__cat.dif.aic.posa Город
+                            a.home-blog__item-img.db.overflow(href="#")
+                                img.img(src="img/city-big.png", alt="")
+                        .home-blog__item-right
+                            a.home-blog__item-title.db.link.transition(href="#") Дух путешествий и&nbsp;эстетика европейских бистро в&nbsp;обновленном Anna Bistrot от Fine Group
+                            .home-blog__item-subtitle Авторский comfort food и вино в <br>историческом центре
+                            a.home-blog__item-btn.btn(href="#") Читать статью
+                
+                include ../includes/_city_items.pug
+
+                .city-navs.df.aic.jcsb.fxw
+                    a.city-btn.btn(href="#") Показать еще
+                    .pagination.df.aic.jcc
+                        a.prev(href="#") 
+                        a(href="#") 1
+                        a(href="#") 2
+                        a(href="#") 3
+                        a(href="#") 4
+                        a.next(href="#")
+
+        section.ranked
+            .container
+                .ranked-wrapper
+                    h2.ranked-title Топ 10 заведений от команды кофейни Botanica
+                    .ranked-items
+                        .ranked-item.df
+                            span.db 1
+                            p Ресторан «Лилоко»
+                        .ranked-item.df
+                            span.db 2
+                            p Лаундж-бар «Марево»
+                        .ranked-item.df
+                            span.db 3
+                            p Винный бар «Wine Me»
+                        .ranked-item.df
+                            span.db 4
+                            p Кофейня «Сups» на Большой красной
+                        .ranked-item.df
+                            span.db 5
+                            p Кофе «Ранняя пташка»
+                        .ranked-item.df
+                            span.db 6
+                            p Винный бар «Gocci»
+                        .ranked-item.df
+                            span.db 7
+                            p Грузинский ресторан «Дадиани»
+                        .ranked-item.df
+                            span.db 8
+                            p Ресторан «Лилоко»
+                        .ranked-item.df
+                            span.db 9
+                            p Лаундж-бар «Марево»
+                        .ranked-item.df
+                            span.db 10
+                            p Винный бар «Wine Me»
+
+
+        .container
+            a.banner.db.overflow.link(href="#")
+                img.img(src="img/banner.png", alt="")
+        
+        include ../includes/_contact.pug

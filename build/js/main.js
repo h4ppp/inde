@@ -167,6 +167,28 @@ document.addEventListener("DOMContentLoaded", function () {
             mobileSearchContainer.classList.toggle("open");
         });
     }
+
+    // left text copies
+    const leftLine = document.querySelector(".left-line");
+    if (leftLine) {
+        const originalSpan = leftLine.querySelector("span");
+
+        if (originalSpan) {
+            for (let i = 0; i < 50; i++) {
+                const clonedSpan = originalSpan.cloneNode(true);
+                leftLine.appendChild(clonedSpan);
+            }
+        }
+    }
+
+    //open all tabs
+    const catsLink = document.querySelector(".cats-link");
+    const catsWrapper = document.querySelector(".cats-wrapper");
+    if (catsLink) {
+        catsLink.addEventListener("click", function () {
+            catsWrapper.classList.add("open");
+        });
+    }
 });
 
 //modals

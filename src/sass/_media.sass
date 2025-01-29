@@ -1,6 +1,64 @@
 @import "vars"
 
 
+//@media (min-width: 1401px)
+//	.color-wrapper
+//		&.violet-block
+//			.page-top__subtitle
+//				width: 750px
+
+@media (min-width: 993px)
+	.city
+		&-items
+			&__block
+				width: 20%
+				margin-top: 40px
+				&:nth-child(1)
+					width: 40%
+				&:nth-child(8)
+					width: 40%
+				&:nth-child(10)
+					width: 40%
+				&:nth-child(17)
+					width: 40%
+				&:nth-child(9)
+					width: 100% !important
+					.home-blog__box-img
+						width: calc(100% - 558px)
+						height: 505px
+						position: absolute
+						right: 0
+						top: 15px
+					.home-blog__cat
+						left: 574px
+						top: 31px
+					.home-blog__box-title
+						width: 540px
+						color: #464646
+						font-family: $font2
+						font-size: 56px
+						font-weight: 700
+						line-height: 56px
+					.home-blog__box-subtitle
+						margin: 24px 0 32px
+						color: #464646
+						font-size: 18px
+						font-weight: 500
+						line-height: 20px
+						width: 540px
+					.home-blog__item-btn.btn
+						position: static
+						opacity: 1
+						height: 40px
+						width: 213px
+					.home-blog__box
+						padding: 15px 0
+						border-top: 1px solid #000
+						border-bottom: 1px solid #000
+						min-height: 537px
+			
+
+
 @media (max-width: 1400px)
 	.container
 		width: 1160px
@@ -15,18 +73,54 @@
 	.home-blog .swiper-slide-active
 		width: 604px
 		min-width: 604px
+	.page-top
+		&__title
+			font-size: 100px
+			line-height: 100%
+		&__subtitle
+			//width: 600px
+			font-size: 22px
+			line-height: 26px
+	.page-top__team .page-top__subtitle
+		width: 750px
+		margin-top: 140px
 
 
 @media (max-width: 1200px)
 	.container
 		width: 960px
+	.page-top__team .page-top__subtitle
+		width: 600px
 	.header-nav ul li ul
 		left: auto
 		right: -6px
 	.home-blog .swiper-slide-active
 		width: 404px
 		min-width: 404px
-
+	.page-top
+		&__title
+			font-size: 90px
+			line-height: 100%
+		&__subtitle
+			//width: 500px
+			font-size: 20px
+			line-height: 26px
+	.left-line
+		display: none
+	.city
+		&-items
+			&__block
+				width: 25% !important
+				margin-top: 40px
+	.city-items__block:nth-child(9) .home-blog__box-subtitle
+		width: calc(50% - 9px)
+	.city-items__block:nth-child(9) .home-blog__box-title
+		width: calc(50% - 9px)
+	.city-items__block:nth-child(9) .home-blog__box-img
+		width: calc(50% - 9px)
+	.city-items__block:nth-child(9) .home-blog__cat
+		left: calc(50% + 9px + 16px)
+	
 
 @media (max-width: 992px)
 	.container, .mobile-search__container
@@ -256,18 +350,164 @@
 		line-height: normal
 	.home-blog__slider
 		margin-top: 24px
-
+	.breadcrumbs
+		display: none
+	.page-top
+		&__list
+			display: block
+			margin: 24px 0
+		&__title
+			font-size: 36px
+			line-height: 100%
+		&__subtitle
+			width: 100%
+			font-size: 18px
+			margin-left: 0
+			line-height: 20px
+			margin-top: 16px
+			color: #4D4D4D
+			font-weight: 600
+	.color-wrapper.blue-block .page-top__title.accent-color
+		color: #464646 !important
+	.ranked
+		&-wrapper
+			margin-bottom: 0
+			margin-top: 40px
+			padding: 11px 0
+		&-title
+			margin-bottom: 24px
+			font-size: 28px
+			line-height: 26px
+		&-item
+			font-size: 14px
+			line-height: 16px
+			span
+				width: 36px
+				min-width: 36px
+	.city
+		&-items
+			&__block
+				width: 25% !important
+				margin-top: 40px
+	.city-items__block:nth-child(9) .home-blog__box-subtitle
+		width: 100%
+	.city-items__block:nth-child(9) .home-blog__box-title
+		width: 100%
+	.city-items__block:nth-child(9) .home-blog__box-img
+		width: 100%
+	.city-items__block:nth-child(9) .home-blog__cat
+		left: 16px
+		top: 16px
+	.city-items
+		margin-left: -4px
+		margin-right: -4px
+		padding-top: 0
+		margin-top: 0
+	.city-items__block
+		width: 50% !important
+		margin-top: 24px
+		padding-left: 4px
+		padding-right: 4px
+		&:nth-child(3n - 2)
+			width: 100% !important
+	.cats-block
+		padding-right: 0
+		margin-right: 16px
+		width: auto
+		margin-top: 0
+	.cats
+		flex-wrap: nowrap
+		margin-right: 0
+		margin-top: 32px
+		padding-top: 0
+	.cats-wrapper
+		overflow-x: auto
+		&::-webkit-scrollbar
+			display: none
+	.cats-item
+		display: inline-flex
+		padding: 0 23px
+		white-space: nowrap
+	.cats-wrapper
+		.cats-block
+			&:nth-child(n+8)
+				display: block
+			&.cats-block__last
+				display: none !important
+	.page-top__subtitle.maxw
+		max-width: 100%
+	.color-wrapper
+		&.blue-block
+			.accent-color
+				color: #464646 !important
+	.color-wrapper
+		&.violet-block
+			.accent-color
+				color: #464646 !important
+	.color-wrapper
+		&.red-block
+			.accent-color
+				color: #464646 !important
+	.color-wrapper
+		&.turquoise-block
+			.accent-color
+				color: #464646 !important
+	.page-top__team .page-top__title
+		position: static
+		br
+			display: none
+	.page-top__team .page-top__subtitle
+		width: 100%
+		margin-top: 16px
+		font-size: 16px
+		line-height: 22px
+		letter-spacing: -0.32px
+	.team-block
+		width: 50%
 
 
 @media (max-width: 767px)
 	.container, .page-menu__container, .mobile-search__container
 		width: 540px
+	.team-item__title
+		font-size: 14px
+		line-height: 16px
+		font-weight: 500
+	.team-item__img::before
+		border-radius: 16px
+	.team-item__img img
+		border-radius: 16px
+	.team-item__text
+		font-size: 11px
+	.city
+		&-navs
+			margin-top: 32px
+			display: block
+		&-btn.btn
+			margin-bottom: 15px
+			width: 100%
+	.pagination
+		justify-content: center
+		a
+			margin: 0 4px
+	.team-list
+		margin-top: -24px
+	.team
+		padding-bottom: 48px
+	.team-block
+		margin-top: 24px
 
 
 @media (max-width: 576px)
 	.container
 		width: 100%
 		padding: 0 16px
+	.team-block
+		width: 100%
+	.cats-wrapper
+		padding-left: 16px
+		margin-left: -16px
+		width: calc(100% + 32px)
 	.mobile-search__container
 		padding-left: 36px
 		width: 100%
@@ -356,3 +596,5 @@
 	.mobile-search__container
 		padding-left: 16px
 		padding-right: 16px
+	.city-items__block
+		width: 100% !important

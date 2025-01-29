@@ -14,6 +14,7 @@ a
 body
 	font-family: $font
 	background: #F4F4F4
+	color: #000
 
 html, body
 	padding: 0
@@ -986,6 +987,433 @@ html, body
 				display: none
 			&:last-child
 				display: block
+
+
+
+.main-blue
+	.main-item__title
+		color: #0066FF
+
+
+
+
+.left-line
+	position: absolute
+	left: 0
+	top: 0
+	z-index: 14
+	background: #fff
+	width: 24px
+	font-size: 16px
+	font-weight: 700
+	line-height: 16px
+	overflow: hidden
+	height: 100%
+	span
+		margin-top: 112px
+		writing-mode: vertical-rl
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+		transform: rotate(180deg)
+		&:first-child
+			margin-top: 42px
+
+
+.color-wrapper
+	&.blue-block
+		.accent-color
+			color: #0066FF !important
+
+.color-wrapper
+	&.violet-block
+		.accent-color
+			color: #A200E0 !important
+
+.color-wrapper
+	&.red-block
+		.accent-color
+			color: #FF1400 !important
+
+.color-wrapper
+	&.turquoise-block
+		.accent-color
+			color: #05B7A8 !important
+
+
+.breadcrumbs
+	&-list
+		padding: 0
+		margin: 0
+		list-style-type: none
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		li
+			position: relative
+			display: inline-flex
+			align-items: center
+			color: #969696
+			font-size: 11px
+			font-weight: 500
+			line-height: normal
+			&::after
+				content: "/"
+				display: inline-flex
+				margin: 0 8px
+			a
+				color: #464646
+				text-decoration: none
+				display: inline-flex
+				align-items: center
+				&:hover
+					text-decoration: underline
+			&:last-child
+				&::after
+					display: none
+
+
+
+.page-top
+	&__list
+		margin: 42px 0 72px
+	&__title
+		font-family: $font2
+		font-size: 128px
+		font-weight: 400
+		line-height: 100%
+	&__subtitle
+		width: 800px
+		max-width: 100%
+		color: #4D4D4D
+		font-size: 26px
+		font-weight: 500
+		line-height: 28px
+
+
+
+
+
+.ranked
+	&-wrapper
+		margin: 40px 0 -24px
+		border-top: 1px solid #000
+		border-bottom: 1px solid #000
+		padding: 15px 0
+	&-title
+		color: #464646
+		font-size: 56px
+		font-weight: 700
+		line-height: 56px
+		font-family: $font2
+		margin-bottom: 24px
+	&-item
+		margin-top: 14px
+		color: #464646
+		font-size: 26px
+		font-weight: 500
+		line-height: 28px
+		&:first-child
+			margin-top: 0
+		span
+			width: 86px
+			min-width: 86px
+
+
+
+
+.pagination
+	a
+		display: flex
+		align-items: center
+		justify-content: center
+		text-decoration: none
+		outline: none
+		border: 1px solid #464646
+		color: #464646
+		transition: all 0.4s
+		width: 40px
+		height: 40px
+		font-size: 14px
+		font-weight: 500
+		margin-left: 8px
+		line-height: 16px
+		position: relative
+		&.prev, &.next
+			font-size: 0
+			&::after
+				content: ""
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				background-image: url('../img/pagination-arrow.svg')
+				background-repeat: no-repeat
+				background-position: center
+				transition: all 0.4s
+		&.prev
+			&::after
+				transform: rotate(180deg)
+		&:hover, &.active
+			background: #000
+			border-color: #000
+			color: #fff
+			&.prev::after, &.next::after
+				filter: brightness(0) invert(1)
+
+
+.city
+	&-navs
+		margin-top: 40px
+	&-btn.btn
+		width: 213px
+		color: #464646
+		&::after
+			content: ""
+			display: block
+			background-image: url('../img/nav-arrow.svg')
+			background-repeat: no-repeat
+			background-position: center
+			transition: all 0.4s
+			margin-left: 10px
+			width: 10px
+			min-width: 10px
+			height: 5px
+		&:hover
+			color: #fff
+			&::after
+				filter: brightness(0) invert(1)
+
+
+
+.city
+	&-top
+		padding: 15px 0
+		border-top: 1px solid #000
+		border-bottom: 1px solid #000
+	&-items
+		margin-top: -16px
+		.home-blog__box
+			padding-bottom: 0
+		.home-blog__item-btn
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			opacity: 0
+
+.cats
+	margin-right: -18px
+	padding-top: 46px
+	&-block
+		margin-top: 18px
+		padding-right: 18px
+		width: 20%
+	&-item.btn
+		width: 100%
+		border-color: #464646
+		color: #464646
+		&.active, &:hover
+			background: #000
+			border-color: #000
+			color: #fff
+
+		
+
+
+.cats-block
+	&:nth-child(n+8)
+		display: none
+	&.cats-block__last
+		display: block !important
+
+.cats-link
+	text-decoration: underline
+	&:hover
+		text-decoration: none
+
+.cats-wrapper.open
+	.cats-block
+		&:nth-child(n+8)
+			display: block
+		&.cats-block__last
+			display: none !important
+
+.page-top__subtitle
+	width: 100%
+	margin-left: 54px
+.page-top__list
+	flex-wrap: nowrap
+
+
+.page-top__subtitle.maxw
+	max-width: 515px
+
+
+
+
+.color-wrapper
+	&.black-block
+		background: #000
+		.accent-color, .home-blog__box-title, .home-blog__box-subtitle
+			color: #fff !important
+		.page-top__subtitle, .main-item__subtitle, .home-blog__item-title, .home-blog__item-subtitle
+			color: #fff !important
+		.main-item, .main-slider, .city-top
+			border-color: #fff
+		.main-slider::before
+			background: #000
+		.breadcrumbs-list li
+			color: #969696
+		.breadcrumbs-list li a
+			a
+				color: #fff
+		.home-blog__item-btn.btn, .city-btn.btn
+			border-color: #fff
+			color: #fff
+			&::before, &::after
+				filter: brightness(0) invert(1)
+			&:hover
+				background: #fff
+				color: #000
+				&::before, &::after
+					filter: none
+		.pagination a
+			border-color: #fff
+			color: #fff
+			&::before, &::after
+				filter: brightness(0) invert(1)
+			&:hover, &.active
+				&:hover
+					background: #fff
+					color: #000
+					&::before, &::after
+						filter: none
+		.city-items__block:nth-child(9) .home-blog__box
+			border-color: #fff
+		.left-line span
+			color: #000 !important
+		.ranked-item, .ranked-title
+			color: #fff
+		.ranked-wrapper
+			border-color: #fff
+		.contact-subtitle, .contact-title, .contact-bottomText
+			color: #fff
+		.contact-link
+			border-color: #fff
+			color: #fff
+			&::before, &::after
+				filter: brightness(0) invert(1)
+			&:hover
+				&:hover
+					background: #fff
+					color: #000
+					&::before, &::after
+						filter: none
+		.contact-bottom__title, .contact-form__input b, .contact-form__policy a
+			color: #fff
+		.contact-form__policy
+			color: #969696
+		.contact-wrapper
+			border-color: #fff
+		.contact-form__btn.btn
+			border-color: #fff
+			color: #fff
+			&::before, &::after
+				filter: brightness(0) invert(1)
+			&:hover
+				&:hover
+					background: #fff
+					color: #000
+					&::before, &::after
+						filter: none
+		.contact-form__input input
+			color: #fff
+			border-color: #fff
+			&::placeholder
+				color: #fff
+		.select .nice-select
+			color: #fff
+			border-color: #fff
+		.select .nice-select::before
+			filter: brightness(0) invert(1)
+		.nice-select .nice-select-dropdown
+			border: 1px solid #fff
+
+
+
+.page-top__team
+	.page-top__title
+		position: absolute
+		left: 0
+		top: 0
+		color: #464646
+	.page-top__subtitle
+		width: 885px
+		margin-top: 184px
+		margin-left: auto
+	.page-top__list
+		position: relative
+
+
+.team
+	padding-bottom: 64px
+	&-block
+		margin-top: 40px
+		width: 33.333%
+	&-list
+		margin-top: -40px
+	&-item
+		&__link
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			z-index: 6
+		&__img
+			padding-top: 81%
+			&::before
+				content: ""
+				position: absolute
+				left: 0
+				top: 0
+				width: 100%
+				height: 100%
+				border: 1px solid rgba(0, 0, 0, 0.10)
+				z-index: 3
+				border-radius: 30px
+			img
+				width: 100%
+				left: 0
+				top: 0
+				height: 100%
+				border-radius: 30px
+				object-fit: cover
+		&__title
+			margin: 12px 0 8px
+			width: 261px
+			max-width: 100%
+			color: #464646
+			font-size: 18px
+			font-weight: 500
+			line-height: 20px
+			transition: all 0.4s
+		&__text
+			color: #464646
+			font-size: 11px
+			font-weight: 500
+			line-height: normal
+			width: 261px
+			max-width: 100%
+		&:hover
+			.team-item__title
+				color: #000
+
+
+
 
 
 
