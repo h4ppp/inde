@@ -1,0 +1,77 @@
+extends ../includes/_template.pug
+
+block content
+
+
+    main.result
+        .container
+            .breadcrumbs
+                .container
+                    ul.breadcrumbs-list
+                        li
+                            a(href="#") Главная
+                        li Результаты поиска
+            h1.result-title Результаты поиска
+            .result-wrapper
+                form.db
+                    .result-search.df.posr
+                        .result-search__input.posr
+                            .result-search__input-clear.posa.db.cursor
+                            input.df.aic(type="text" placeholder="Поиск" value="Соб" required)
+                        button.result-search__btn.df.aic.jcc.cursor.transition Найти
+                .cats-wrapper
+                    .cats.df.aic.fxw
+                        .cats-block
+                            a.cats-item.btn.active(href="#") Все результаты (74)
+                        .cats-block
+                            a.cats-item.btn(href="#") Город (23)
+                        .cats-block
+                            a.cats-item.btn(href="#") Новости (11)
+                        .cats-block
+                            a.cats-item.btn(href="#") Еда (11)
+                        .cats-block
+                            a.cats-item.btn(href="#") Искусство (5)
+                        .cats-block
+                            a.cats-item.btn(href="#") Прошлое (2)
+
+                .result-items
+                    .result-item.posr
+                        a.result-item__link.db.posa(href="#")
+                        .result-item__cat.dif.aic Город
+                        .result-item__title(style="color: #06F;")
+                            b Соб
+                            | ытие года. В Казани откроется новый спортивный комплекс 
+                        .result-item__text В этом году в Казани произойдет грандиозное событие – открытие нового современного спортивного комплекса. Это станет настоящим подарком для всех любителей спорта и здорового образа жизни.
+                    .result-item.posr
+                        a.result-item__link.db.posa(href="#")
+                        .result-item__cat.dif.aic Прошлое
+                        .result-item__title(style="color: #000;")
+                            b Соб
+                            | ытие года. В Казани откроется новый спортивный комплекс 
+                        .result-item__text В этом году в Казани произойдет грандиозное событие – открытие нового современного спортивного комплекса. Это станет настоящим подарком для всех любителей спорта и здорового образа жизни.
+                    .result-item.posr
+                        a.result-item__link.db.posa(href="#")
+                        .result-item__cat.dif.aic Город
+                        .result-item__title(style="color: #A200E0;")
+                            b Соб
+                            | ытие года. В Казани откроется новый спортивный комплекс 
+                        .result-item__text В этом году в Казани произойдет грандиозное событие – открытие нового современного спортивного комплекса. Это станет настоящим подарком для всех любителей спорта и здорового образа жизни.
+                    .result-item.posr
+                        a.result-item__link.db.posa(href="#")
+                        .result-item__cat.dif.aic Герои
+                        .result-item__title(style="color: #05B7A8;")
+                            b Соб
+                            | ытие года. В Казани откроется новый спортивный комплекс 
+                        .result-item__text В этом году в Казани произойдет грандиозное событие – открытие нового современного спортивного комплекса. Это станет настоящим подарком для всех любителей спорта и здорового образа жизни.
+
+                .city-navs.df.aic.jcsb.fxw
+                    a.city-btn.btn(href="#") Показать еще
+                    .pagination.df.aic.jcc
+                        a.prev(href="#") 
+                        a(href="#") 1
+                        a(href="#") 2
+                        a(href="#") 3
+                        a(href="#") 4
+                        a.next(href="#")
+        
+    include ../includes/_contact2.pug

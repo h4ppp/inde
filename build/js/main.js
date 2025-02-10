@@ -149,6 +149,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    const searchPageClear = document.querySelector(".result-search__input-clear");
+    const searchPageInput = document.querySelector(".result-search__input input");
+
+    if (searchPageClear) {
+        searchPageClear.addEventListener("click", function () {
+            searchPageInput.value = "";
+        });
+    }
+
     //mobile search
     const mobileSearchInput = document.querySelector(".mobile-search__input");
     const mobileSearchContainer = document.querySelector(".mobile-search");
@@ -189,6 +198,43 @@ document.addEventListener("DOMContentLoaded", function () {
             catsWrapper.classList.add("open");
         });
     }
+
+    // copy text
+    const copyButtons = document.querySelectorAll("[data-copy]");
+
+    copyButtons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+            e.preventDefault();
+            const textToCopy = button.getAttribute("data-copy");
+
+            navigator.clipboard
+                .writeText(textToCopy)
+                .then(() => {
+                    button.classList.add("active");
+                    setTimeout(() => {
+                        button.classList.remove("active");
+                    }, 3000);
+                })
+                .catch((err) => {
+                    console.error("Ошибка при копировании текста: ", err);
+                });
+        });
+    });
+
+    //accordion
+    const accordionTitles = document.querySelectorAll("[data-accordion-title]");
+
+    accordionTitles.forEach((title) => {
+        title.addEventListener("click", function () {
+            const accordion = title.closest("[data-accordion]");
+            document.querySelectorAll("[data-accordion]").forEach((acc) => {
+                if (acc !== accordion) {
+                    acc.classList.remove("active");
+                }
+            });
+            accordion.classList.toggle("active");
+        });
+    });
 });
 
 //modals
