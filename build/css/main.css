@@ -21,12 +21,12 @@
 @font-face {
   font-family: "TemporaLGCUni";
   font-weight: 400;
-  src: url("../fonts/TemporaLGCUni-Regular.woff2");
+  src: url("../fonts/TemporaLGCUni-Regular.otf");
 }
 @font-face {
   font-family: "TemporaLGCUni";
   font-weight: 700;
-  src: url("../fonts/TemporaLGCUni-Bold.woff2");
+  src: url("../fonts/TemporaLGCUni-Bold.otf");
 }
 input, button, textarea, select {
   font-family: "FiraCode", sans-serif;
