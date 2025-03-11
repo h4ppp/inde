@@ -4913,11 +4913,19 @@ img.single-heroes__item-img {
     font-size: 14px;
     font-weight: 400;
     line-height: 16px;
+    color: rgba(0, 0, 0, 0.64);
 }
 .voice-timecode b {
     font-weight: 500;
     cursor: pointer;
+    color: #000;
     user-select: none;
+}
+.black-block .voice-timecode {
+    color: rgba(255, 255, 255, 0.64);
+}
+.black-block .voice-timecode b {
+    color: #fff;
 }
 
 .tooltip {
