@@ -1,561 +1,577 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Заголовок</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="img/favicon.svg">
-    <link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="libs/nice-select2/nice-select2.css" rel="stylesheet">
-    <link href="libs/modal.css" rel="stylesheet">
-    <link href="libs/start.css" rel="stylesheet">
-    <link href="css/main.css?v=1.14" rel="stylesheet">
-  </head>
-  <body>
-    <div class="page-wrapper df direction">
-      <div class="page-menu">
-        <div class="page-menu__container">
-          <nav class="page-menu__nav">
-            <ul>
-              <li><a href="#">Город</a>
+
+<head>
+  <meta charset="utf-8">
+  <title>Заголовок</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="img/favicon.svg">
+  <link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="libs/nice-select2/nice-select2.css" rel="stylesheet">
+  <link href="libs/modal.css" rel="stylesheet">
+  <link href="libs/start.css" rel="stylesheet">
+  <link href="css/main.css?v=1.15" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-wrapper df direction">
+    <div class="page-menu">
+      <div class="page-menu__container">
+        <nav class="page-menu__nav">
+          <ul>
+            <li><a href="#">Город</a>
+              <ul>
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Новое место</a></li>
+                <li><a href="#">Еда</a></li>
+                <li><a href="#">Альметьевск</a></li>
+                <li><a href="#">Набережные челны</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Герои</a></li>
+            <li><a href="#">Путешествия</a>
+              <ul>
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Казань</a></li>
+                <li><a href="#">Альметьевск</a></li>
+                <li><a href="#">Набережные челны</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Искусство</a>
+              <ul>
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Музыка</a></li>
+                <li><a href="#">Живопись</a></li>
+                <li><a href="#">Литература</a></li>
+                <li><a href="#">Театр</a></li>
+                <li><a href="#">Фотография </a></li>
+                <li><a href="#">Выставки</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Прошлое</a></li>
+            <li><a href="#">Еще</a>
+              <ul>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Рекламодателям</a></li>
+                <li><a href="#">Амбассадоры инде</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Соглашения и правила</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-menu__mobile hide">
+          <div class="footer-item">
+            <div class="footer-item__title">Общий контакт редакции:</div>
+            <div class="footer-item__text"><a href="mailto:hello@inde.io">hello@inde.io</a></div>
+            <div class="footer-item__text"><a href="#" target="_blank">VK</a><a href="#" target="_blank">Telegram</a></div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item__title">Обсудить рекламу:</div>
+            <div class="footer-item__text"><a href="mailto:ad@inde.io">ad@inde.io</a></div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item__title">Некоммерческие проекты и&nbsp;информационное партнерство:</div>
+            <div class="footer-item__text"><a href="mailto:pr@inde.io">pr@inde.io</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="mobile-search">
+      <div class="mobile-search__container df direction">
+        <input class="mobile-search__input df aic" type="text" placeholder="Найти">
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
+      </div>
+    </form>
+    <div class="top-fixed">
+      <div class="green-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="container">
+          <div class="header-list df aifs">
+            <div class="header-burger cursor transition">
+              <svg>
+                <use xlink:href="img/sprite.svg#burger"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </div><a class="header-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a>
+            <div class="header-mobile__search cursor hide transition">
+              <svg>
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </div>
+            <div class="header-right">
+              <form class="header-search df aic posr">
+                <div class="header-search__icon db">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </div>
+                <input class="header-search__input df aic" type="text" placeholder="Найти">
+                <div class="header-search__clear posa db cursor"></div>
+                <button class="header-search__btn df aic jcc link transition cursor">Найти</button>
+                <div class="header-search__results posa">
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
+                </div>
+              </form>
+              <nav class="header-nav">
                 <ul>
-                  <li><a href="#">Все</a></li>
-                  <li><a href="#">Новое место</a></li>
+                  <li><a href="#">Город</a></li>
                   <li><a href="#">Еда</a></li>
-                  <li><a href="#">Альметьевск</a></li>
-                  <li><a href="#">Набережные челны</a></li>
+                  <li><a href="#">Герои</a></li>
+                  <li><a href="#">Путешествия</a></li>
+                  <li><a href="#">Искусство</a></li>
+                  <li><a href="#">Прошлое</a></li>
+                  <li><a href="#">Еще</a>
+                    <ul>
+                      <li><a href="#">Вакансии</a></li>
+                      <li><a href="#">Рекламодателям</a></li>
+                      <li><a href="#">Амбассадоры инде</a></li>
+                      <li><a href="#">О проекте</a></li>
+                      <li><a href="#">Соглашения и правила</a></li>
+                    </ul>
+                  </li>
                 </ul>
-              </li>
-              <li><a href="#">Герои</a></li>
-              <li><a href="#">Путешествия</a>
-                <ul>
-                  <li><a href="#">Все</a></li>
-                  <li><a href="#">Казань</a></li>
-                  <li><a href="#">Альметьевск</a></li>
-                  <li><a href="#">Набережные челны</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Искусство</a>
-                <ul>
-                  <li><a href="#">Все</a></li>
-                  <li><a href="#">Музыка</a></li>
-                  <li><a href="#">Живопись</a></li>
-                  <li><a href="#">Литература</a></li>
-                  <li><a href="#">Театр</a></li>
-                  <li><a href="#">Фотография </a></li>
-                  <li><a href="#">Выставки</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Прошлое</a></li>
-              <li><a href="#">Еще</a>
-                <ul>
-                  <li><a href="#">Вакансии</a></li>
-                  <li><a href="#">Рекламодателям</a></li>
-                  <li><a href="#">Амбассадоры инде</a></li>
-                  <li><a href="#">О проекте</a></li>
-                  <li><a href="#">Соглашения и правила</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <div class="page-menu__mobile hide">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="color-wrapper black-block index">
+      <div class="left-line"><span class="accent-color">Прошлое</span></div>
+      <main class="main">
+        <div class="container">
+          <div class="main-wrapper posr">
+            <div class="main-slider swiper">
+              <div class="main-next posa cursor"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
+                    <div class="main-item__subtitle">Кирилл Сафронов</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village </div>
+                    <div class="main-item__subtitle">Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Свобода воли vs нейробиология — как люди выбирают?</div>
+                    <div class="main-item__subtitle">Что посмотреть</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">«Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
+                    <div class="main-item__subtitle">Кирилл Сафронов</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village </div>
+                    <div class="main-item__subtitle">Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Свобода воли vs нейробиология — как люди выбирают?</div>
+                    <div class="main-item__subtitle">Что посмотреть</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">«Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="breadcrumbs">
+        <div class="container">
+          <ul class="breadcrumbs-list">
+            <li><a href="#">Главная</a></li>
+            <li>Прошлое</li>
+          </ul>
+        </div>
+      </div>
+
+
+      <main class="page-top">
+        <div class="container">
+          <div class="page-top__list df aic fxw jcsb">
+            <h1 class="page-top__title accent-color">Прошлое</h1>
+            <div class="page-top__subtitle maxw">Статьи о ключевых моментах мировой истории, биографии выдающихся исторических деятелей, аналитические материалы о влиянии прошлого на настоящее. Мы стремимся показать, как исторические события и личности формируют нашу культуру, общество и политику сегодня. </div>
+          </div>
+        </div>
+      </main>
+
+
+      <main class="city">
+        <div class="container">
+          <div class="city-top">
+            <div class="home-blog__item df jcsb posr">
+              <div class="home-blog__item-left posr">
+                <div class="home-blog__cat dif aic posa">Город</div>
+                <a class="home-blog__item-img anim-block db overflow" href="#">
+                  <img class="img" src="img/city-big.png" alt="">
+                  <img class="img" src="img/blog-2.png" alt="">
+                </a>
+              </div>
+              <div class="home-blog__item-right"><a class="home-blog__item-title db link transition" href="#">Дух путешествий и&nbsp;эстетика европейских бистро в&nbsp;обновленном Anna Bistrot от Fine Group</a>
+                <div class="home-blog__item-subtitle">Авторский comfort food и вино в <br>историческом центре</div><a class="home-blog__item-btn btn" href="#">Читать статью</a>
+              </div>
+            </div>
+          </div>
+          <div class="city-items row">
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div>
+                <a class="home-blog__box-img anim-block db overflow" href="#">
+                  <img class="img" src="img/city-big.png" alt="">
+                  <img class="img" src="img/blog-2.png" alt="">
+                </a>
+                <a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
+                <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-2.png" alt=""></a><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
+                <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/city-big.png" alt=""></a><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
+                <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-2.png" alt=""></a><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
+                <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+            <div class="city-items__block col">
+              <div class="home-blog__box posr df direction">
+                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+          </div>
+          <div class="city-navs df aic jcsb fxw"><a class="city-btn btn" href="#">Показать еще</a>
+            <div class="pagination df aic jcc"><a class="prev" href="#"> </a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a class="next" href="#"></a></div>
+          </div>
+        </div>
+      </main>
+      <section class="ranked">
+        <div class="container">
+          <div class="ranked-wrapper">
+            <h2 class="ranked-title">Топ 10 заведений от команды кофейни Botanica</h2>
+            <div class="ranked-items">
+              <div class="ranked-item df"><span class="db">1</span>
+                <p>Ресторан «Лилоко»</p>
+              </div>
+              <div class="ranked-item df"><span class="db">2</span>
+                <p>Лаундж-бар «Марево»</p>
+              </div>
+              <div class="ranked-item df"><span class="db">3</span>
+                <p>Винный бар «Wine Me»</p>
+              </div>
+              <div class="ranked-item df"><span class="db">4</span>
+                <p>Кофейня «Сups» на Большой красной</p>
+              </div>
+              <div class="ranked-item df"><span class="db">5</span>
+                <p>Кофе «Ранняя пташка»</p>
+              </div>
+              <div class="ranked-item df"><span class="db">6</span>
+                <p>Винный бар «Gocci»</p>
+              </div>
+              <div class="ranked-item df"><span class="db">7</span>
+                <p>Грузинский ресторан «Дадиани»</p>
+              </div>
+              <div class="ranked-item df"><span class="db">8</span>
+                <p>Ресторан «Лилоко»</p>
+              </div>
+              <div class="ranked-item df"><span class="db">9</span>
+                <p>Лаундж-бар «Марево»</p>
+              </div>
+              <div class="ranked-item df"><span class="db">10</span>
+                <p>Винный бар «Wine Me»</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container"><a class="banner db overflow link" href="#"><img class="img" src="img/banner.png" alt=""></a></div>
+      <section class="contact">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-list df jcsb">
+              <div class="contact-left"><img class="contact-img img" src="img/contact.png" alt=""></div>
+              <div class="contact-right df direction">
+                <h2 class="contact-title">Будем ближе</h2><img class="contact-mobile hide" src="img/contact.png" alt="">
+                <div class="contact-subtitle">Присоединяйтесь к нашему сообществу в социальных сетях, чтобы быть в курсе последних новостей, эксклюзивных интервью, обзоров и аналитических материалов. Будьте в тренде вместе с нами!</div>
+                <div class="contact-links"><a class="contact-link btn" href="#" target="_blank">Вконтакте</a><a class="contact-link btn" href="#" target="_blank">Telegram</a><a class="contact-link btn" href="#" target="_blank">Instagram*</a></div>
+                <div class="contact-bottomText">*Instagram Meta Platforms Inc. запрещено на террритории Росии</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-bottom">
+            <div class="contact-bottom__wrapper">
+              <div class="contact-bottom__title">Будьте в курсе последних событий</div>
+              <form class="contact-form">
+                <div class="contact-form__list df fxw jcsb">
+                  <div class="contact-form__left">
+                    <div class="contact-form__input df aic"><b>E-mail:</b>
+                      <input class="df aic" type="email" placeholder="example@555.com" required>
+                    </div>
+                    <div class="contact-form__input df aic"><b>Тема:</b>
+                      <div class="select">
+                        <select>
+                          <option value="Все темы" selected>Все темы</option>
+                          <option value="Все темы">Все темы</option>
+                          <option value="Все темы">Все темы</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-form__right df direction">
+                    <button class="contact-form__btn btn">Подписаться</button>
+                    <div class="contact-form__policy">Нажимая на «Подписаться», я соглашаюсь с&nbsp;<a href="#">обработкой персональных данных</a></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list row footer-top">
+          <div class="footer-block col"><a class="footer-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a></div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Город</a></li>
+                <li><a href="#">Еда</a></li>
+                <li><a href="#">Герои</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Путешествия</a></li>
+                <li><a href="#">Искусство</a></li>
+                <li><a href="#">Прошлое</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Амбассадоры «Инде»</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Рекламодателям</a></li>
+                <li><a href="#">Вакансии</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-list row footer-center">
+          <div class="footer-block col"></div>
+          <div class="footer-block col">
             <div class="footer-item">
               <div class="footer-item__title">Общий контакт редакции:</div>
               <div class="footer-item__text"><a href="mailto:hello@inde.io">hello@inde.io</a></div>
               <div class="footer-item__text"><a href="#" target="_blank">VK</a><a href="#" target="_blank">Telegram</a></div>
             </div>
+          </div>
+          <div class="footer-block col">
             <div class="footer-item">
               <div class="footer-item__title">Обсудить рекламу:</div>
               <div class="footer-item__text"><a href="mailto:ad@inde.io">ad@inde.io</a></div>
             </div>
+          </div>
+          <div class="footer-block col">
             <div class="footer-item">
               <div class="footer-item__title">Некоммерческие проекты и&nbsp;информационное партнерство:</div>
               <div class="footer-item__text"><a href="mailto:pr@inde.io">pr@inde.io</a></div>
             </div>
           </div>
         </div>
+        <div class="footer-list row footer-bottom">
+          <div class="footer-block col">
+            <div class="footer-bottom__text">Инде. 2015-2024</div>
+          </div>
+          <div class="footer-block col">
+            <div class="footer-bottom__text"><a class="dif link transition" href="#">Соглашения и правила</a></div>
+          </div>
+        </div>
       </div>
-      <form class="mobile-search">
-        <div class="mobile-search__container df direction">
-          <input class="mobile-search__input df aic" type="text" placeholder="Найти">
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
-        </div>
-      </form>
-      <div class="top-fixed">
-        <div class="green-slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-          </div>
-        </div>
-        <header class="header">
-          <div class="container">
-            <div class="header-list df aifs">
-              <div class="header-burger cursor transition">
-                <svg>
-                  <use xlink:href="img/sprite.svg#burger"></use>
-                </svg>
-                <svg>
-                  <use xlink:href="img/sprite.svg#close"></use>
-                </svg>
-              </div><a class="header-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a>
-              <div class="header-mobile__search cursor hide transition">
-                <svg>
-                  <use xlink:href="img/sprite.svg#search"></use>
-                </svg>
-                <svg>
-                  <use xlink:href="img/sprite.svg#close"></use>
-                </svg>
-              </div>
-              <div class="header-right">
-                <form class="header-search df aic posr">
-                  <div class="header-search__icon db">
-                    <svg>
-                      <use xlink:href="img/sprite.svg#search"></use>
-                    </svg>
-                  </div>
-                  <input class="header-search__input df aic" type="text" placeholder="Найти">
-                  <div class="header-search__clear posa db cursor"></div>
-                  <button class="header-search__btn df aic jcc link transition cursor">Найти</button>
-                  <div class="header-search__results posa">
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
-                  </div>
-                </form>
-                <nav class="header-nav">
-                  <ul>
-                    <li><a href="#">Город</a></li>
-                    <li><a href="#">Еда</a></li>
-                    <li><a href="#">Герои</a></li>
-                    <li><a href="#">Путешествия</a></li>
-                    <li><a href="#">Искусство</a></li>
-                    <li><a href="#">Прошлое</a></li>
-                    <li><a href="#">Еще</a>
-                      <ul>
-                        <li><a href="#">Вакансии</a></li>
-                        <li><a href="#">Рекламодателям</a></li>
-                        <li><a href="#">Амбассадоры инде</a></li>
-                        <li><a href="#">О проекте</a></li>
-                        <li><a href="#">Соглашения и правила</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </header>
-      </div>
-      <div class="color-wrapper black-block index">
-        <div class="left-line"><span class="accent-color">Прошлое</span></div>
-        <main class="main">
-          <div class="container">
-            <div class="main-wrapper posr">
-              <div class="main-slider swiper">
-                <div class="main-next posa cursor"></div>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
-                      <div class="main-item__subtitle">Кирилл Сафронов</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village </div>
-                      <div class="main-item__subtitle">Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Свобода воли vs нейробиология — как люди выбирают?</div>
-                      <div class="main-item__subtitle">Что посмотреть</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">«Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
-                      <div class="main-item__subtitle">Кирилл Сафронов</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village </div>
-                      <div class="main-item__subtitle">Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Свобода воли vs нейробиология — как люди выбирают?</div>
-                      <div class="main-item__subtitle">Что посмотреть</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">«Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-        <div class="breadcrumbs">
-          <div class="container">
-            <ul class="breadcrumbs-list">
-              <li><a href="#">Главная</a></li>
-              <li>Прошлое</li>
-            </ul>
-          </div>
-        </div>
-        <main class="page-top">
-          <div class="container">
-            <div class="page-top__list df aic fxw jcsb">
-              <h1 class="page-top__title accent-color">Прошлое</h1>
-              <div class="page-top__subtitle maxw">Статьи о ключевых моментах мировой истории, биографии выдающихся исторических деятелей, аналитические материалы о влиянии прошлого на настоящее. Мы стремимся показать, как исторические события и личности формируют нашу культуру, общество и политику сегодня. </div>
-            </div>
-          </div>
-        </main>
-        <main class="city">
-          <div class="container">
-            <div class="city-top">
-              <div class="home-blog__item df jcsb posr">
-                <div class="home-blog__item-left posr">
-                  <div class="home-blog__cat dif aic posa">Город</div><a class="home-blog__item-img db overflow" href="#"><img class="img" src="img/city-big.png" alt=""></a>
-                </div>
-                <div class="home-blog__item-right"><a class="home-blog__item-title db link transition" href="#">Дух путешествий и&nbsp;эстетика европейских бистро в&nbsp;обновленном Anna Bistrot от Fine Group</a>
-                  <div class="home-blog__item-subtitle">Авторский comfort food и вино в <br>историческом центре</div><a class="home-blog__item-btn btn" href="#">Читать статью</a>
-                </div>
-              </div>
-            </div>
-            <div class="city-items row">
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-2.png" alt=""></a><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
-                  <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-2.png" alt=""></a><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
-                  <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/city-big.png" alt=""></a><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
-                  <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-2.png" alt=""></a><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
-                  <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-              <div class="city-items__block col">
-                <div class="home-blog__box posr df direction">
-                  <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-            </div>
-            <div class="city-navs df aic jcsb fxw"><a class="city-btn btn" href="#">Показать еще</a>
-              <div class="pagination df aic jcc"><a class="prev" href="#"> </a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a class="next" href="#"></a></div>
-            </div>
-          </div>
-        </main>
-        <section class="ranked">
-          <div class="container">
-            <div class="ranked-wrapper">
-              <h2 class="ranked-title">Топ 10 заведений от команды кофейни Botanica</h2>
-              <div class="ranked-items">
-                <div class="ranked-item df"><span class="db">1</span>
-                  <p>Ресторан «Лилоко»</p>
-                </div>
-                <div class="ranked-item df"><span class="db">2</span>
-                  <p>Лаундж-бар «Марево»</p>
-                </div>
-                <div class="ranked-item df"><span class="db">3</span>
-                  <p>Винный бар «Wine Me»</p>
-                </div>
-                <div class="ranked-item df"><span class="db">4</span>
-                  <p>Кофейня «Сups» на Большой красной</p>
-                </div>
-                <div class="ranked-item df"><span class="db">5</span>
-                  <p>Кофе «Ранняя пташка»</p>
-                </div>
-                <div class="ranked-item df"><span class="db">6</span>
-                  <p>Винный бар «Gocci»</p>
-                </div>
-                <div class="ranked-item df"><span class="db">7</span>
-                  <p>Грузинский ресторан «Дадиани»</p>
-                </div>
-                <div class="ranked-item df"><span class="db">8</span>
-                  <p>Ресторан «Лилоко»</p>
-                </div>
-                <div class="ranked-item df"><span class="db">9</span>
-                  <p>Лаундж-бар «Марево»</p>
-                </div>
-                <div class="ranked-item df"><span class="db">10</span>
-                  <p>Винный бар «Wine Me»</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="container"><a class="banner db overflow link" href="#"><img class="img" src="img/banner.png" alt=""></a></div>
-        <section class="contact">
-          <div class="container">
-            <div class="contact-wrapper">
-              <div class="contact-list df jcsb">
-                <div class="contact-left"><img class="contact-img img" src="img/contact.png" alt=""></div>
-                <div class="contact-right df direction">
-                  <h2 class="contact-title">Будем ближе</h2><img class="contact-mobile hide" src="img/contact.png" alt="">
-                  <div class="contact-subtitle">Присоединяйтесь к нашему сообществу в социальных сетях, чтобы быть в курсе последних новостей, эксклюзивных интервью, обзоров и аналитических материалов. Будьте в тренде вместе с нами!</div>
-                  <div class="contact-links"><a class="contact-link btn" href="#" target="_blank">Вконтакте</a><a class="contact-link btn" href="#" target="_blank">Telegram</a><a class="contact-link btn" href="#" target="_blank">Instagram*</a></div>
-                  <div class="contact-bottomText">*Instagram Meta Platforms Inc. запрещено на террритории Росии</div>
-                </div>
-              </div>
-            </div>
-            <div class="contact-bottom">
-              <div class="contact-bottom__wrapper">
-                <div class="contact-bottom__title">Будьте в курсе последних событий</div>
-                <form class="contact-form">
-                  <div class="contact-form__list df fxw jcsb">
-                    <div class="contact-form__left">
-                      <div class="contact-form__input df aic"><b>E-mail:</b>
-                        <input class="df aic" type="email" placeholder="example@555.com" required>
-                      </div>
-                      <div class="contact-form__input df aic"><b>Тема:</b>
-                        <div class="select">
-                          <select>
-                            <option value="Все темы" selected>Все темы</option>
-                            <option value="Все темы">Все темы</option>
-                            <option value="Все темы">Все темы</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="contact-form__right df direction">
-                      <button class="contact-form__btn btn">Подписаться</button>
-                      <div class="contact-form__policy">Нажимая на «Подписаться», я соглашаюсь с&nbsp;<a href="#">обработкой персональных данных</a></div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-list row footer-top">
-            <div class="footer-block col"><a class="footer-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a></div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">Город</a></li>
-                  <li><a href="#">Еда</a></li>
-                  <li><a href="#">Герои</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">Путешествия</a></li>
-                  <li><a href="#">Искусство</a></li>
-                  <li><a href="#">Прошлое</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">О проекте</a></li>
-                  <li><a href="#">Амбассадоры «Инде»</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">Рекламодателям</a></li>
-                  <li><a href="#">Вакансии</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="footer-line"></div>
-          <div class="footer-list row footer-center">
-            <div class="footer-block col"></div>
-            <div class="footer-block col">
-              <div class="footer-item">
-                <div class="footer-item__title">Общий контакт редакции:</div>
-                <div class="footer-item__text"><a href="mailto:hello@inde.io">hello@inde.io</a></div>
-                <div class="footer-item__text"><a href="#" target="_blank">VK</a><a href="#" target="_blank">Telegram</a></div>
-              </div>
-            </div>
-            <div class="footer-block col">
-              <div class="footer-item">
-                <div class="footer-item__title">Обсудить рекламу:</div>
-                <div class="footer-item__text"><a href="mailto:ad@inde.io">ad@inde.io</a></div>
-              </div>
-            </div>
-            <div class="footer-block col">
-              <div class="footer-item">
-                <div class="footer-item__title">Некоммерческие проекты и&nbsp;информационное партнерство:</div>
-                <div class="footer-item__text"><a href="mailto:pr@inde.io">pr@inde.io</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="footer-list row footer-bottom">
-            <div class="footer-block col">
-              <div class="footer-bottom__text">Инде. 2015-2024</div>
-            </div>
-            <div class="footer-block col">
-              <div class="footer-bottom__text"><a class="dif link transition" href="#">Соглашения и правила</a></div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <div class="modals">
-        <div class="modal" id="success" data-modal>
-          <div class="modal-overlay" data-modal-overlay></div>
-          <div class="modal-list">
-            <div class="modal-container">
-              <div class="modal-close" data-modal-close></div>
-              <svg class="modal-icon">
-                <use xlink:href="img/sprite.svg#modal-check"></use>
-              </svg>
-              <div class="center">
-                <div class="modal-title">Спасибо!</div>
-                <div class="modal-subtitle">Ваша заявка успешно отправлена</div>
-              </div><img class="modal-logo img" src="img/logo.svg" alt="">
-            </div>
+    </footer>
+    <div class="modals">
+      <div class="modal" id="success" data-modal>
+        <div class="modal-overlay" data-modal-overlay></div>
+        <div class="modal-list">
+          <div class="modal-container">
+            <div class="modal-close" data-modal-close></div>
+            <svg class="modal-icon">
+              <use xlink:href="img/sprite.svg#modal-check"></use>
+            </svg>
+            <div class="center">
+              <div class="modal-title">Спасибо!</div>
+              <div class="modal-subtitle">Ваша заявка успешно отправлена</div>
+            </div><img class="modal-logo img" src="img/logo.svg" alt="">
           </div>
         </div>
       </div>
     </div>
-    <script src="libs/swiper/swiper-bundle.min.js"></script>
-    <script src="libs/nice-select2/nice-select2.js"></script>
-    <script src="libs/fslightbox.js"></script>
-    <script src="js/main.js?v=1.14"></script>
-  </body>
+  </div>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/nice-select2/nice-select2.js"></script>
+  <script src="libs/fslightbox.js"></script>
+  <script src="js/main.js?v=1.15"></script>
+</body>
+
 </html>

@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const swiperMain = new Swiper(".main-slider", {
         slidesPerView: "auto",
         spaceBetween: 0,
-        loop: true,
+        loop: false,
         navigation: {
             nextEl: ".main-next",
         },
@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     }, 3000);
                 })
                 .catch((err) => {
-                    console.error("Ошибка при копировании текста: ", err);
+                    console.error("РћС€РёР±РєР° РїСЂРё РєРѕРїРёСЂРѕРІР°РЅРёРё С‚РµРєСЃС‚Р°: ", err);
                 });
         });
     });
@@ -331,6 +331,135 @@ document.addEventListener("DOMContentLoaded", function () {
                 parentTrips.querySelector(".trips-item__text").classList.toggle("active");
             }
             btn.classList.toggle("active");
+        });
+    });
+
+    //new animate
+    let textChecked = true;
+    function handlerText() {
+        const textAnimElement = document.querySelector(".text-anim__end");
+        if (!textAnimElement) return;
+
+        textAnimElement.style.opacity = 1;
+
+        const text = textAnimElement.innerHTML;
+        textAnimElement.innerHTML = "";
+
+        let index = 0;
+        const speed = 20;
+
+        function typeWriter() {
+            if (index < text.length) {
+                if (text.charAt(index) === "<") {
+                    const tagEnd = text.indexOf(">", index);
+                    if (tagEnd !== -1) {
+                        textAnimElement.innerHTML += text.substring(index, tagEnd + 1);
+                        index = tagEnd + 1;
+                    }
+                } else {
+                    textAnimElement.innerHTML += text.charAt(index);
+                    index++;
+                }
+                setTimeout(typeWriter, speed);
+            }
+        }
+        typeWriter();
+    }
+
+    function checkVisibility() {
+        const animWrappers = document.querySelectorAll(
+            ".anim-wrapper, .single-content h2, .single-content h3, .single-content h4, .single-content h5, .single-content h6",
+        );
+
+        animWrappers.forEach(function (element) {
+            const windowTop = window.scrollY || window.pageYOffset;
+            const elementTop = element.getBoundingClientRect().top + windowTop;
+
+            if (elementTop <= windowTop + window.innerHeight - 200) {
+                if (!element.classList.contains("start-anim")) {
+                    element.classList.add("start-anim");
+                    if (textChecked) {
+                        handlerText();
+                        textChecked = false;
+                    }
+                }
+            } else {
+                element.classList.remove("start-anim");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", checkVisibility);
+    checkVisibility();
+
+    //audio
+    //audio
+    const voiceBlocks = document.querySelectorAll(".voice");
+    voiceBlocks.forEach((block) => {
+        const audio = block.querySelector("audio");
+        const voiceTime = block.querySelector(".voice-time");
+        const voicePlay = block.querySelector(".voice-play");
+        const voiceRange = block.querySelector(".voice-range span:last-child");
+        const voiceRangeTrack = block.querySelector(".voice-range span:nth-child(1)"); // Прогресс-бар
+        const timecodeItems = block.querySelectorAll(".voice-timecode__item");
+
+        function formatTime(seconds) {
+            const minutes = Math.floor(seconds / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${String(minutes).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+        }
+
+        audio.addEventListener("loadedmetadata", () => {
+            let number = formatTime(audio.duration);
+            voiceTime.textContent = number;
+        });
+
+        voicePlay.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.play();
+                block.classList.add("active");
+            } else {
+                audio.pause();
+                block.classList.remove("active");
+            }
+        });
+
+        audio.addEventListener("timeupdate", () => {
+            const percent = (audio.currentTime / audio.duration) * 100;
+            voiceRange.style.width = `${Math.round(percent)}%`;
+        });
+
+        audio.addEventListener("ended", () => {
+            voiceRange.style.width = "0%";
+            block.classList.remove("active");
+        });
+
+        // Обработка кликов на таймкоды
+        timecodeItems.forEach((item) => {
+            item.addEventListener("click", () => {
+                const timeText = item.querySelector("b").textContent; // Получаем текст времени, например "0:45"
+                const [minutes, seconds] = timeText.split(":").map(Number); // Разделяем минуты и секунды
+                const timeInSeconds = minutes * 60 + seconds; // Переводим время в секунды
+                audio.currentTime = timeInSeconds; // Устанавливаем время в аудио
+                if (audio.paused) {
+                    audio.play(); // Если аудио было на паузе, запускаем его
+                    block.classList.add("active");
+                }
+            });
+        });
+
+        // Обработка кликов на прогресс-бар
+        voiceRangeTrack.addEventListener("click", (event) => {
+            const rect = voiceRangeTrack.getBoundingClientRect(); // Получаем размеры и позицию прогресс-бара
+            const clickPosition = event.clientX - rect.left; // Позиция клика относительно прогресс-бара
+            const percent = (clickPosition / rect.width) * 100; // Процент клика от общей ширины прогресс-бара
+            const time = (percent / 100) * audio.duration; // Время в аудио, соответствующее позиции клика
+
+            audio.currentTime = time; // Устанавливаем время в аудио
+            if (audio.paused) {
+                audio.play(); // Если аудио было на паузе, запускаем его
+                block.classList.add("active");
+            }
         });
     });
 });

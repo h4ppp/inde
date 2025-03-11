@@ -1,539 +1,530 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Заголовок</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="img/favicon.svg">
-    <link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="libs/nice-select2/nice-select2.css" rel="stylesheet">
-    <link href="libs/modal.css" rel="stylesheet">
-    <link href="libs/start.css" rel="stylesheet">
-    <link href="css/main.css?v=1.14" rel="stylesheet">
-  </head>
-  <body>
-    <div class="page-wrapper df direction">
-      <div class="page-menu">
-        <div class="page-menu__container">
-          <nav class="page-menu__nav">
-            <ul>
-              <li><a href="#">Город</a>
+
+<head>
+  <meta charset="utf-8">
+  <title>Заголовок</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="img/favicon.svg">
+  <link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="libs/nice-select2/nice-select2.css" rel="stylesheet">
+  <link href="libs/modal.css" rel="stylesheet">
+  <link href="libs/start.css" rel="stylesheet">
+  <link href="css/main.css?v=1.15" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-wrapper df direction">
+    <div class="page-menu">
+      <div class="page-menu__container">
+        <nav class="page-menu__nav">
+          <ul>
+            <li><a href="#">Город</a>
+              <ul>
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Новое место</a></li>
+                <li><a href="#">Еда</a></li>
+                <li><a href="#">Альметьевск</a></li>
+                <li><a href="#">Набережные челны</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Герои</a></li>
+            <li><a href="#">Путешествия</a>
+              <ul>
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Казань</a></li>
+                <li><a href="#">Альметьевск</a></li>
+                <li><a href="#">Набережные челны</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Искусство</a>
+              <ul>
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Музыка</a></li>
+                <li><a href="#">Живопись</a></li>
+                <li><a href="#">Литература</a></li>
+                <li><a href="#">Театр</a></li>
+                <li><a href="#">Фотография </a></li>
+                <li><a href="#">Выставки</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Прошлое</a></li>
+            <li><a href="#">Еще</a>
+              <ul>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Рекламодателям</a></li>
+                <li><a href="#">Амбассадоры инде</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Соглашения и правила</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-menu__mobile hide">
+          <div class="footer-item">
+            <div class="footer-item__title">Общий контакт редакции:</div>
+            <div class="footer-item__text"><a href="mailto:hello@inde.io">hello@inde.io</a></div>
+            <div class="footer-item__text"><a href="#" target="_blank">VK</a><a href="#" target="_blank">Telegram</a></div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item__title">Обсудить рекламу:</div>
+            <div class="footer-item__text"><a href="mailto:ad@inde.io">ad@inde.io</a></div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item__title">Некоммерческие проекты и&nbsp;информационное партнерство:</div>
+            <div class="footer-item__text"><a href="mailto:pr@inde.io">pr@inde.io</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="mobile-search">
+      <div class="mobile-search__container df direction">
+        <input class="mobile-search__input df aic" type="text" placeholder="Найти">
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
+      </div>
+    </form>
+    <div class="top-fixed">
+      <div class="green-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="container">
+          <div class="header-list df aifs">
+            <div class="header-burger cursor transition">
+              <svg>
+                <use xlink:href="img/sprite.svg#burger"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </div><a class="header-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a>
+            <div class="header-mobile__search cursor hide transition">
+              <svg>
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </div>
+            <div class="header-right">
+              <form class="header-search df aic posr">
+                <div class="header-search__icon db">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </div>
+                <input class="header-search__input df aic" type="text" placeholder="Найти">
+                <div class="header-search__clear posa db cursor"></div>
+                <button class="header-search__btn df aic jcc link transition cursor">Найти</button>
+                <div class="header-search__results posa">
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
+                </div>
+              </form>
+              <nav class="header-nav">
                 <ul>
-                  <li><a href="#">Все</a></li>
-                  <li><a href="#">Новое место</a></li>
+                  <li><a href="#">Город</a></li>
                   <li><a href="#">Еда</a></li>
-                  <li><a href="#">Альметьевск</a></li>
-                  <li><a href="#">Набережные челны</a></li>
+                  <li><a href="#">Герои</a></li>
+                  <li><a href="#">Путешествия</a></li>
+                  <li><a href="#">Искусство</a></li>
+                  <li><a href="#">Прошлое</a></li>
+                  <li><a href="#">Еще</a>
+                    <ul>
+                      <li><a href="#">Вакансии</a></li>
+                      <li><a href="#">Рекламодателям</a></li>
+                      <li><a href="#">Амбассадоры инде</a></li>
+                      <li><a href="#">О проекте</a></li>
+                      <li><a href="#">Соглашения и правила</a></li>
+                    </ul>
+                  </li>
                 </ul>
-              </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="color-wrapper turquoise-block index page-single">
+      <div class="left-line"><span class="accent-color">Герои</span></div>
+      <main class="main">
+        <div class="container">
+          <div class="main-wrapper posr">
+            <div class="main-slider swiper">
+              <div class="main-next posa cursor"></div>
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
+                    <div class="main-item__subtitle">Кирилл Сафронов</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="single-fixed df">
+        <div class="single-fixed__buttons df"><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b1">Введение</a><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b2">Якорь №2</a><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b3">Якорь №3</a></div>
+        <div class="single-fixed__btn bg-color dif aic">Содержание<br>статьи</div>
+      </div>
+      <section class="single">
+        <div class="container">
+          <div class="single-top df direction fxw" id="b1"><img class="single-top__img" src="img/heroes-1.png" alt="">
+            <div class="article-center article-margin single-top__wrapper">
+              <div class="single-top__list df fxw jcsb">
+                <div class="single-top__text accent-color">Анна Абрамова</div>
+                <div class="single-top__text single-top__date accent-color">11 июля 2024 в 16:19</div>
+                <div class="single-top__text accent-color">7 минут</div>
+              </div>
+            </div>
+          </div>
+          <div class="single-box index">
+            <div class="single-box__list">
+              <div class="single-cats df aic fxw">
+                <div class="single-cats__item dif aic">Герои</div>
+              </div><a class="article-top__share hide aic posa" href="#">SHARE</a>
+            </div>
+            <h1 class="single-title accent-color">«Пока вал не прокатит бумагу с доской, ты не знаешь, что получилось». </h1>
+          </div>
+          <div class="single-breadcrumbs df aic jcsb">
+            <ul class="breadcrumbs-list">
+              <li><a href="#">Главная</a></li>
               <li><a href="#">Герои</a></li>
-              <li><a href="#">Путешествия</a>
-                <ul>
-                  <li><a href="#">Все</a></li>
-                  <li><a href="#">Казань</a></li>
-                  <li><a href="#">Альметьевск</a></li>
-                  <li><a href="#">Набережные челны</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Искусство</a>
-                <ul>
-                  <li><a href="#">Все</a></li>
-                  <li><a href="#">Музыка</a></li>
-                  <li><a href="#">Живопись</a></li>
-                  <li><a href="#">Литература</a></li>
-                  <li><a href="#">Театр</a></li>
-                  <li><a href="#">Фотография </a></li>
-                  <li><a href="#">Выставки</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Прошлое</a></li>
-              <li><a href="#">Еще</a>
-                <ul>
-                  <li><a href="#">Вакансии</a></li>
-                  <li><a href="#">Рекламодателям</a></li>
-                  <li><a href="#">Амбассадоры инде</a></li>
-                  <li><a href="#">О проекте</a></li>
-                  <li><a href="#">Соглашения и правила</a></li>
-                </ul>
-              </li>
+              <li>«Пока вал не прокатит бумагу с доской, ты не знаешь, что получилось». </li>
             </ul>
-          </nav>
-          <div class="page-menu__mobile hide">
+            <div class="article-top__lang df aic"><a class="active" href="#">РУС</a><span></span><a href="#">ТАТ</a></div>
+          </div>
+          <div class="article-wrapper posr" id="b2">
+            <div class="article-share posa">
+              <div class="article-share__title">SHARE <br>THIS<br>ARTICLE</div>
+              <div class="article-share__links"><a class="article-share__link db link transition" href="#" data-copy="copied text!!!">Сopy link</a><a class="article-share__link db link" href="#">Vk</a><a class="article-share__link db link" href="#">Telegram</a><a class="article-share__link db link" href="#">WhatsApp</a></div>
+            </div>
+            <div class="single-content article-center article-margin">
+              <h2 class="single-content__title accent-color">Художница Мария Смольянинова — о печатной графике, интуиции и музыке городов.</h2>
+              <div class="anim-wrapper">
+                <div class="anim-content">
+
+                  <div class="text-anim">
+                    <div class="text-anim__start">8 марта в Казанском Кремле открылась выставка «Эпифании Марии Смольяниновой». Московская художница работает в технике офорта — одной из разновидностей печатной графики, которая появилась в XVI веке и технологически не менялась с тех пор. С этой техникой экспериментировали Пабло Пикассо, Эдгар Дега, Альбрехт Дюрер, Рембрандт и многие другие художники, но с годами офорт потерял в популярности из-за сложного и долгого подготовительного процесса. <br>Перед открытием казанской выставки мы поговорили с Марией о процессе создания работ, технологических особенностях офорта, современном состоянии печатной графики и о том, что ее вдохновляет.</div>
+                    <div class="text-anim__end">8 марта в Казанском Кремле открылась выставка «Эпифании Марии Смольяниновой». Московская художница работает в технике офорта — одной из разновидностей печатной графики, которая появилась в XVI веке и технологически не менялась с тех пор. С этой техникой экспериментировали Пабло Пикассо, Эдгар Дега, Альбрехт Дюрер, Рембрандт и многие другие художники, но с годами офорт потерял в популярности из-за сложного и долгого подготовительного процесса. <br>Перед открытием казанской выставки мы поговорили с Марией о процессе создания работ, технологических особенностях офорта, современном состоянии печатной графики и о том, что ее вдохновляет.</div>
+                  </div>
+                  <div class="voice">
+                    <audio>
+                      <source src="audio/file.mp3" type="audio/mpeg">
+                    </audio>
+                    <div class="voice-title">Название</div>
+                    <div class="voice-flex df aic">
+                      <div class="voice-play cursor"></div>
+                      <div class="voice-right">
+                        <div class="voice-range">
+                          <span></span>
+                          <span></span>
+                        </div>
+                        <div class="voice-bottom df aic">
+                          <div class="voice-time"></div>
+                          <span>&nbsp;,&nbsp;</span>
+                          <div class="voice-size">15.0 KB</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="voice-timecode">
+                      <div class="voice-timecode__item">1. Название 1-ого таймкода: <b>0:45</b></div>
+                      <div class="voice-timecode__item">2. Название 2-ого таймкода: <b>1:36</b></div>
+                      <div class="voice-timecode__item">3. Название 3-ого таймкода: <b>2:00</b></div>
+                    </div>
+                  </div>
+                  <figure class="full-width">
+                    <div class="hover-img"><img src="img/heroes-2.png" alt=""></div>
+                    <figcaption>Фото: Галина Овчинникова</figcaption>
+                  </figure>
+                  <h3>Почему вы занимаетесь именно печатной графикой? <span class="tooltip" data-text="Пушкин не просто любил лениться, но и умел правильно это делать. Более того, он учил этому искусству других."></span></h3>
+                  <p>У нее богатые возможности: попробовав однажды, невозможно отказаться. Я в печатной графике с 2008 года — мне даже удивительно, что так долго. Начала в институте: окончила Суриковский, а до этого училась в Московском академическом художественном лицее при Российской академии художеств (ранее Московская средняя художественная школа. — Прим. «Инде») на живописца. После очень серьезной академической программы мне хотелось попробовать что-то новое. В частности, графические техники, о которых я только слышала и видела работы на выставках, но не представляла, как это делается. Первой техникой стал офорт, и я абсолютно влюбилась в него, хотя параллельно училась в мастерской линогравюры (для печати в технике линогравюры изображение вырезается на линолеуме, а в офорте — на металлической доске. — Прим. «Инде»). <br><br>Землепользователи направляют в комитет внешнего благоустройства заявки на обследование зеленых насаждений на своих земельных участках. Специалисты комитета проводят обследование и подготавливают акт — с заключением о вырубке аварийных деревьев и обрезке деревьев в хорошем состоянии. <br><br>После землепользователи заключают договоры со специализированными организациями. Их сотрудники обрезают деревья ранней весной или поздней осенью, практически каждый день срубают аварийные, по сформированным комитетом актам, и сажают тысячи новых деревьев в год. <br><br>Сделать что-то самостоятельно с зеленым фондом землепользователи не могут, потому что он принадлежит городу. Даже если когда-то вы посадили дерево во дворе — неважно, законно или нет, — срубить его по своему желанию уже не сможете. Порядок действий примерно такой: запрос, акт, планирование работ и их выполнение.</p>
+                  <div class="single-content__blockqoute" id="b3">
+                    <div class="single-content__blockqoute-left"><img class="single-content__blockqoute-img" src="img/blockqoute-2.png" alt="">
+                      <div class="single-content__blockqoute-name">Мария Смольянинова художница</div>
+                    </div>
+                    <div class="single-content__blockqoute-text">Изначально офорт был создан для возможности тиражирования, а сейчас перешел в разряд элитарной графики из-за своей трудоемкости. Я практически не делаю тиражи, только авторскую печать — пока ею занимаешься, происходит много экспериментов. Ты создаешь форму, а потом добиваешься разных эффектов, но не ради них самих, а чтобы точнее выразить идею.</div>
+                  </div>
+                  <div class="ambassador-slider__wrapper posr">
+                    <div class="ambassador-slider swiper">
+                      <div class="ambassador-arrow ambassador-arrow__prev posr posa cursor"></div>
+                      <div class="ambassador-arrow ambassador-arrow__next posr posa cursor"></div>
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="ambassador-slider__item df aifs">
+                            <div class="ambassador-slider__item-text">Подпись к картинке</div><img class="ambassador-slider__item-img img" src="img/heroes-3.png" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="ambassador-slider__item df aifs">
+                            <div class="ambassador-slider__item-text">Подпись к картинке</div><img class="ambassador-slider__item-img img" src="img/ambassador.png" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h4>А как выглядит сам процесс создания работ?</h4>
+                  <p>Все начинается с какого-то импульса. Ты его чувствуешь и понимаешь, что нужно транслировать. Я веду дневники с маленькими эскизами и записями. Обычно фиксирую самые важные моменты — то, что меня как-то зацепило. Потом делаю эскизы, произвожу отбор, думаю, как лучше. Финальный вариант углем или карандашом рисую в размер и затем перевожу на доску. Причем я не буквально копирую свой предварительный рисунок: это тоже творческий процесс. <br><br>Для каждой серии я ищу свой пластический язык и материал. Не думаю о том, как работа выглядит со стороны, — мне хочется найти язык, отражающий определенное состояние и замысел. Например, в сериях, посвященных городам, мне хотелось выразить звук Петербурга и Москвы. Для этого я использовала разные по форме и манере средства. <br><br>В офорте очень много техник. Изначально это был травленый штрих [основная манера офорта, изображение создается офортными иглами различной толщины и сечения], потом появилась акватинта [техника глубокой печати, в которой мастер работает не штрихом, а пятном], а в XX веке мягкий лак [офортную доску покрывают специальным лаком, затем кладут лист бумаги и карандашом выполняют рисунок. Бумагу снимают, и на доске остается изображение, потому что в местах нажатия карандаша лак легко прилипал к бумаге. Готовый оттиск напоминает акварель] и меццо-тинто [доску обрабатывают специальными инструментами, чтобы она стала шероховатой, и затем полируют светлые участки изображения]. Но меццо-тинто и сухая игла, если профессионально говорить, не относятся к офорту. Офорт — это непосредственно то, что травится кислотой. И в открытом травлении широчайший диапазон возможностей. Я работаю на разных металлах. На каждом открытое травление будет вести себя по-своему. Все зависит от свойств материала: например, медь более мягкая, сталь — жесткая. Мне очень нравится, что в офорте есть заранее продуманная режиссура, он требует сосредоточенности. В общем-то нельзя ошибаться, потому что ничего не получится исправить, только повторять весь длительный процесс заново.</p>
+                  <figure class="full-width"><a href="https://www.youtube.com/watch?v=7X8II6J-6mU" data-fslightbox="video"> <img src="img/heroes-4.png" alt=""></a>
+                    <figcaption>Подпись к видео</figcaption>
+                  </figure>
+                  <h5>Герой ваших серий — город. Вы будто ловите впечатление от мест и потом переносите их в графические листы. Как город и поездки вплетены в вашу повседневность?</h5>
+                  <p>Я люблю гулять, наблюдать и чувствовать города. Ощущение от мест сложно сформулировать словами. Когда делала серию, посвященную Петербургу, я увлекалась поэзией и хотела как-то связать работы с Бродским. Тогда еще не было музея «Полторы комнаты», но был фонд по созданию музея. Я подружилась с ребятами, которые там работали, и попала в будущее пространство. Мне казалось, что я почувствую нечто особенное и у меня получится сделать что-то по поводу Бродского, но ничего не вышло. Зато получилась целая цепочка удивительных и счастливых знакомств. Потом я просто гуляла по Петербургу, но никак не могла найти язык, чтобы выразить чувства. Уже в Москве я пришла к квадрату 31 на 31 см, к лаконичности и звуку. Работы в серии музыкальные, в них есть определенный ритм.<br><br>А потом возникла серия такого же камерного формата, посвященная Москве. У нее совсем другое ощущение и совсем другой звук. Москва разная, не такая цельная, как Петербург, и в этом ее прелесть. Иногда устаешь от этой фрагментарности, но порой она, наоборот, становится важной и ощущается как музыкальная импровизация. Так получилась серия «Московский регтайм».</p>
+                  <div class="single-heroes df jcsb">
+                    <div class="single-heroes__item"><img class="single-heroes__item-img" src="img/heroes-5.png" alt="">
+                      <div class="single-heroes__item-text">Весна в «Красном доме», 2016 <br>Из серии «Московский регтайм»<br>Бумага, офорт, 31×31 см</div>
+                    </div>
+                    <div class="single-heroes__item"><img class="single-heroes__item-img" src="img/heroes-6.png" alt="">
+                      <div class="single-heroes__item-text">Утро на Тверской, 2016 <br>Из серии «Московский регтайм» <br>Бумага, офорт, 31×31 см</div>
+                    </div>
+                  </div>
+                  <h6>Что будет на вашей выставке в Казани?</h6>
+                  <p>Новая серия «Вечный пейзаж», которую я начала в 2020 году, когда долгое время сидела в помещении, а потом появилась возможность выехать за город. Была весна, я чувствовала что-то невероятное, будто бы все начинается заново. Я поняла, насколько я, как человек, маленькая в сравнении с простором природы вокруг. Мне захотелось выразить это — так и появилась серия. Она еще не закончена, буду показывать ее с открытым финалом. <br><br>Также будет несколько московских серий и по одной посвященной Петербургу, Грузии, Свияжску. Еще — сквозной цикл о дороге. Так сложилось, что мой первый офорт в 2008 году был посвящен железной дороге. Пути и пересекающиеся провода наполнили мне нотный стан или иероглифы. Я стала развивать эту тему и делать лист с дорогой каждый раз, когда заканчиваю серию. <br><br>Впервые приоткрою свой творческий процесс и покажу несколько досок, созданных на разных стадиях работы над циклом по Свияжску.</p>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="article-center article-margin">
+              <div class="single-bottomText">Обложка: Kinopoisk; фото: 1 — Mentalfilmfest; 2 — Reactor-art; 3 — Kazan-kremlin; 4 — Hor.viktorgolumbevskii; 5 — Tg; 6 — YouTube; 7 — Vk; 8 — Vk; 9 — Vk; 10 — Tg; 11 — Vk; 12 — Kinopoisk; 13 — Kazan-tuz; 14 — Ugolkazan; 15 — Ugolkazan; 16 — Belova-art-gallery; 17 — Vk; 18 — Vk</div>
+            </div>
+            <div class="article-center article-margin">
+              <div class="article-soc df aifs jcsb">
+                <div class="article-soc__title">Поделиться статьей:</div>
+                <div class="article-soc__links df aic"><a class="contact-link btn" href="#" target="_blank">Вконтакте</a><a class="contact-link btn" href="#" target="_blank">Telegram</a><a class="contact-link btn" href="#" target="_blank">Instagram*</a></div>
+              </div>
+              <div class="article-bottom df aic jcsb"><a class="article-back dif aic link posr transition" href="#">Ко всем статьям</a>
+                <div class="article-bottom__text">*Instagram — деятельность <br>на территории РФ запрещена</div>
+              </div>
+            </div>
+            <div class="article-other posa">
+              <div class="article-other__title accent-color">Далее по теме:</div>
+              <div class="article-other__list">
+                <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
+                  <div class="article-other__item-title accent-color">Коктейль за сторис в Roof Gastro Bar, летняя распродажа в NYX и акция на книги от Ozon</div>
+                </div>
+                <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
+                  <div class="article-other__item-title accent-color">Свобода воли vs нейробиология— как люди выбирают? </div>
+                </div>
+                <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
+                  <div class="article-other__item-title accent-color">Сгущенка с нори, сырники с томатным джемом и пицца с кониной</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="other-blog">
+      <div class="container">
+        <div class="home-blog__title center">Может быть инетресно</div>
+        <div class="city-items row">
+          <div class="city-items__block col">
+            <div class="home-blog__box posr df direction">
+              <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a>
+              <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+          </div>
+          <div class="city-items__block col">
+            <div class="home-blog__box posr df direction">
+              <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-2.png" alt=""></a>
+              <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a><a class="home-blog__item-btn btn" href="#">Перейти</a></div>
+            </div>
+          </div>
+          <div class="city-items__block col">
+            <div class="home-blog__box posr df direction">
+              <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a>
+              <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
+                <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+          </div>
+          <div class="city-items__block col">
+            <div class="home-blog__box posr df direction">
+              <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a>
+              <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="contact">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-list df jcsb">
+              <div class="contact-left"><img class="contact-img img" src="img/contact.png" alt=""></div>
+              <div class="contact-right df direction">
+                <h2 class="contact-title">Будем ближе</h2><img class="contact-mobile hide" src="img/contact.png" alt="">
+                <div class="contact-subtitle">Присоединяйтесь к нашему сообществу в социальных сетях, чтобы быть в курсе последних новостей, эксклюзивных интервью, обзоров и аналитических материалов. Будьте в тренде вместе с нами!</div>
+                <div class="contact-links"><a class="contact-link btn" href="#" target="_blank">Вконтакте</a><a class="contact-link btn" href="#" target="_blank">Telegram</a><a class="contact-link btn" href="#" target="_blank">Instagram*</a></div>
+                <div class="contact-bottomText">*Instagram Meta Platforms Inc. запрещено на террритории Росии</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-bottom">
+            <div class="contact-bottom__wrapper">
+              <div class="contact-bottom__title">Будьте в курсе последних событий</div>
+              <form class="contact-form">
+                <div class="contact-form__list df fxw jcsb">
+                  <div class="contact-form__left">
+                    <div class="contact-form__input df aic"><b>E-mail:</b>
+                      <input class="df aic" type="email" placeholder="example@555.com" required>
+                    </div>
+                    <div class="contact-form__input df aic"><b>Тема:</b>
+                      <div class="select">
+                        <select>
+                          <option value="Все темы" selected>Все темы</option>
+                          <option value="Все темы">Все темы</option>
+                          <option value="Все темы">Все темы</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-form__right df direction">
+                    <button class="contact-form__btn btn">Подписаться</button>
+                    <div class="contact-form__policy">Нажимая на «Подписаться», я соглашаюсь с&nbsp;<a href="#">обработкой персональных данных</a></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list row footer-top">
+          <div class="footer-block col"><a class="footer-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a></div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Город</a></li>
+                <li><a href="#">Еда</a></li>
+                <li><a href="#">Герои</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Путешествия</a></li>
+                <li><a href="#">Искусство</a></li>
+                <li><a href="#">Прошлое</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Амбассадоры «Инде»</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Рекламодателям</a></li>
+                <li><a href="#">Вакансии</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-list row footer-center">
+          <div class="footer-block col"></div>
+          <div class="footer-block col">
             <div class="footer-item">
               <div class="footer-item__title">Общий контакт редакции:</div>
               <div class="footer-item__text"><a href="mailto:hello@inde.io">hello@inde.io</a></div>
               <div class="footer-item__text"><a href="#" target="_blank">VK</a><a href="#" target="_blank">Telegram</a></div>
             </div>
+          </div>
+          <div class="footer-block col">
             <div class="footer-item">
               <div class="footer-item__title">Обсудить рекламу:</div>
               <div class="footer-item__text"><a href="mailto:ad@inde.io">ad@inde.io</a></div>
             </div>
+          </div>
+          <div class="footer-block col">
             <div class="footer-item">
               <div class="footer-item__title">Некоммерческие проекты и&nbsp;информационное партнерство:</div>
               <div class="footer-item__text"><a href="mailto:pr@inde.io">pr@inde.io</a></div>
             </div>
           </div>
         </div>
+        <div class="footer-list row footer-bottom">
+          <div class="footer-block col">
+            <div class="footer-bottom__text">Инде. 2015-2024</div>
+          </div>
+          <div class="footer-block col">
+            <div class="footer-bottom__text"><a class="dif link transition" href="#">Соглашения и правила</a></div>
+          </div>
+        </div>
       </div>
-      <form class="mobile-search">
-        <div class="mobile-search__container df direction">
-          <input class="mobile-search__input df aic" type="text" placeholder="Найти">
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
-        </div>
-      </form>
-      <div class="top-fixed">
-        <div class="green-slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-          </div>
-        </div>
-        <header class="header">
-          <div class="container">
-            <div class="header-list df aifs">
-              <div class="header-burger cursor transition">
-                <svg>
-                  <use xlink:href="img/sprite.svg#burger"></use>
-                </svg>
-                <svg>
-                  <use xlink:href="img/sprite.svg#close"></use>
-                </svg>
-              </div><a class="header-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a>
-              <div class="header-mobile__search cursor hide transition">
-                <svg>
-                  <use xlink:href="img/sprite.svg#search"></use>
-                </svg>
-                <svg>
-                  <use xlink:href="img/sprite.svg#close"></use>
-                </svg>
-              </div>
-              <div class="header-right">
-                <form class="header-search df aic posr">
-                  <div class="header-search__icon db">
-                    <svg>
-                      <use xlink:href="img/sprite.svg#search"></use>
-                    </svg>
-                  </div>
-                  <input class="header-search__input df aic" type="text" placeholder="Найти">
-                  <div class="header-search__clear posa db cursor"></div>
-                  <button class="header-search__btn df aic jcc link transition cursor">Найти</button>
-                  <div class="header-search__results posa">
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
-                  </div>
-                </form>
-                <nav class="header-nav">
-                  <ul>
-                    <li><a href="#">Город</a></li>
-                    <li><a href="#">Еда</a></li>
-                    <li><a href="#">Герои</a></li>
-                    <li><a href="#">Путешествия</a></li>
-                    <li><a href="#">Искусство</a></li>
-                    <li><a href="#">Прошлое</a></li>
-                    <li><a href="#">Еще</a>
-                      <ul>
-                        <li><a href="#">Вакансии</a></li>
-                        <li><a href="#">Рекламодателям</a></li>
-                        <li><a href="#">Амбассадоры инде</a></li>
-                        <li><a href="#">О проекте</a></li>
-                        <li><a href="#">Соглашения и правила</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </header>
-      </div>
-      <div class="color-wrapper turquoise-block index page-single">
-        <div class="left-line"><span class="accent-color">Герои</span></div>
-        <main class="main">
-          <div class="container">
-            <div class="main-wrapper posr">
-              <div class="main-slider swiper">
-                <div class="main-next posa cursor"></div>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
-                      <div class="main-item__subtitle">Кирилл Сафронов</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village </div>
-                      <div class="main-item__subtitle">Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Свобода воли vs нейробиология — как люди выбирают?</div>
-                      <div class="main-item__subtitle">Что посмотреть</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">«Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
-                      <div class="main-item__subtitle">Кирилл Сафронов</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village </div>
-                      <div class="main-item__subtitle">Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Свобода воли vs нейробиология — как люди выбирают?</div>
-                      <div class="main-item__subtitle">Что посмотреть</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">«Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-        <div class="single-fixed df">
-          <div class="single-fixed__buttons df"><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b1">Введение</a><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b2">Якорь №2</a><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b3">Якорь №3</a></div>
-          <div class="single-fixed__btn bg-color dif aic">Содержание<br>статьи</div>
-        </div>
-        <section class="single">
-          <div class="container">
-            <div class="single-top df direction fxw" id="b1"><img class="single-top__img" src="img/heroes-1.png" alt="">
-              <div class="article-center article-margin single-top__wrapper">
-                <div class="single-top__list df fxw jcsb">
-                  <div class="single-top__text accent-color">Анна Абрамова</div>
-                  <div class="single-top__text single-top__date accent-color">11 июля 2024 в 16:19</div>
-                  <div class="single-top__text accent-color">7 минут</div>
-                </div>
-              </div>
-            </div>
-            <div class="single-box index">
-              <div class="single-box__list">
-                <div class="single-cats df aic fxw">
-                  <div class="single-cats__item dif aic">Герои</div>
-                </div><a class="article-top__share hide aic posa" href="#">SHARE</a>
-              </div>
-              <h1 class="single-title accent-color">«Пока вал не прокатит бумагу с доской, ты не знаешь, что получилось». </h1>
-            </div>
-            <div class="single-breadcrumbs df aic jcsb">
-              <ul class="breadcrumbs-list">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Герои</a></li>
-                <li>«Пока вал не прокатит бумагу с доской, ты не знаешь, что получилось». </li>
-              </ul>
-              <div class="article-top__lang df aic"><a class="active" href="#">РУС</a><span></span><a href="#">ТАТ</a></div>
-            </div>
-            <div class="article-wrapper posr" id="b2">
-              <div class="article-share posa">
-                <div class="article-share__title">SHARE <br>THIS<br>ARTICLE</div>
-                <div class="article-share__links"><a class="article-share__link db link transition" href="#" data-copy="copied text!!!">Сopy link</a><a class="article-share__link db link" href="#">Vk</a><a class="article-share__link db link" href="#">Telegram</a><a class="article-share__link db link" href="#">WhatsApp</a></div>
-              </div>
-              <div class="single-content article-center article-margin">
-                <h2 class="single-content__title accent-color">Художница Мария Смольянинова — о печатной графике, интуиции и музыке городов.</h2>
-                <p>8 марта в Казанском Кремле открылась выставка «Эпифании Марии Смольяниновой». Московская художница работает в технике офорта — одной из разновидностей печатной графики, которая появилась в XVI веке и технологически не менялась с тех пор. С этой техникой экспериментировали Пабло Пикассо, Эдгар Дега, Альбрехт Дюрер, Рембрандт и многие другие художники, но с годами офорт потерял в популярности из-за сложного и долгого подготовительного процесса.  <br>Перед открытием казанской выставки мы поговорили с Марией о процессе создания работ, технологических особенностях офорта, современном состоянии печатной графики и о том, что ее вдохновляет.</p>
-                <figure class="full-width"><img src="img/heroes-2.png" alt="">
-                  <figcaption>Фото: Галина Овчинникова</figcaption>
-                </figure>
-                <h3>Почему вы занимаетесь именно печатной графикой?</h3>
-                <p>У нее богатые возможности: попробовав однажды, невозможно отказаться. Я в печатной графике с 2008 года — мне даже удивительно, что так долго. Начала в институте: окончила Суриковский, а до этого училась в Московском академическом художественном лицее при Российской академии художеств (ранее Московская средняя художественная школа. — Прим. «Инде») на живописца. После очень серьезной академической программы мне хотелось попробовать что-то новое. В частности, графические техники, о которых я только слышала и видела работы на выставках, но не представляла, как это делается. Первой техникой стал офорт, и я абсолютно влюбилась в него, хотя параллельно училась в мастерской линогравюры (для печати в технике линогравюры изображение вырезается на линолеуме, а в офорте — на металлической доске. — Прим. «Инде»). <br><br>Землепользователи направляют в комитет внешнего благоустройства заявки на обследование зеленых насаждений на своих земельных участках. Специалисты комитета проводят обследование и подготавливают акт — с заключением о вырубке аварийных деревьев и обрезке деревьев в хорошем состоянии. <br><br>После землепользователи заключают договоры со специализированными организациями. Их сотрудники обрезают деревья ранней весной или поздней осенью, практически каждый день срубают аварийные, по сформированным комитетом актам, и сажают тысячи новых деревьев в год. <br><br>Сделать что-то самостоятельно с зеленым фондом землепользователи не могут, потому что он принадлежит городу. Даже если когда-то вы посадили дерево во дворе — неважно, законно или нет, — срубить его по своему желанию уже не сможете. Порядок действий примерно такой: запрос, акт, планирование работ и их выполнение.</p>
-                <div class="single-content__blockqoute" id="b3">
-                  <div class="single-content__blockqoute-left"><img class="single-content__blockqoute-img" src="img/blockqoute-2.png" alt="">
-                    <div class="single-content__blockqoute-name">Мария Смольянинова художница</div>
-                  </div>
-                  <div class="single-content__blockqoute-text">Изначально офорт был создан для возможности тиражирования, а сейчас перешел в разряд элитарной графики из-за своей трудоемкости. Я практически не делаю тиражи, только авторскую печать — пока ею занимаешься, происходит много экспериментов. Ты создаешь форму, а потом добиваешься разных эффектов, но не ради них самих, а чтобы точнее выразить идею.</div>
-                </div>
-                <div class="ambassador-slider__wrapper posr">
-                  <div class="ambassador-slider swiper">
-                    <div class="ambassador-arrow ambassador-arrow__prev posr posa cursor"></div>
-                    <div class="ambassador-arrow ambassador-arrow__next posr posa cursor"></div>
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="ambassador-slider__item df aifs">
-                          <div class="ambassador-slider__item-text">Подпись к картинке</div><img class="ambassador-slider__item-img img" src="img/heroes-3.png" alt="">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="ambassador-slider__item df aifs">
-                          <div class="ambassador-slider__item-text">Подпись к картинке</div><img class="ambassador-slider__item-img img" src="img/ambassador.png" alt="">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <h4>А как выглядит сам процесс создания работ?</h4>
-                <p>Все начинается с какого-то импульса. Ты его чувствуешь и понимаешь, что нужно транслировать. Я веду дневники с маленькими эскизами и записями. Обычно фиксирую самые важные моменты — то, что меня как-то зацепило. Потом делаю эскизы, произвожу отбор, думаю, как лучше. Финальный вариант углем или карандашом рисую в размер и затем перевожу на доску. Причем я не буквально копирую свой предварительный рисунок: это тоже творческий процесс. <br><br>Для каждой серии я ищу свой пластический язык и материал. Не думаю о том, как работа выглядит со стороны, — мне хочется найти язык, отражающий определенное состояние и замысел. Например, в сериях, посвященных городам, мне хотелось выразить звук Петербурга и Москвы. Для этого я использовала разные по форме и манере средства. <br><br>В офорте очень много техник. Изначально это был травленый штрих [основная манера офорта, изображение создается офортными иглами различной толщины и сечения], потом появилась акватинта [техника глубокой печати, в которой мастер работает не штрихом, а пятном], а в XX веке мягкий лак [офортную доску покрывают специальным лаком, затем кладут лист бумаги и карандашом выполняют рисунок. Бумагу снимают, и на доске остается изображение, потому что в местах нажатия карандаша лак легко прилипал к бумаге. Готовый оттиск напоминает акварель] и меццо-тинто [доску обрабатывают специальными инструментами, чтобы она стала шероховатой, и затем полируют светлые участки изображения]. Но меццо-тинто и сухая игла, если профессионально говорить, не относятся к офорту. Офорт — это непосредственно то, что травится кислотой. И в открытом травлении широчайший диапазон возможностей. Я работаю на разных металлах. На каждом открытое травление будет вести себя по-своему. Все зависит от свойств материала: например, медь более мягкая, сталь — жесткая. Мне очень нравится, что в офорте есть заранее продуманная режиссура, он требует сосредоточенности. В общем-то нельзя ошибаться, потому что ничего не получится исправить, только повторять весь длительный процесс заново.</p>
-                <figure class="full-width"><a href="https://www.youtube.com/watch?v=7X8II6J-6mU" data-fslightbox="video"> <img src="img/heroes-4.png" alt=""></a>
-                  <figcaption>Подпись к видео</figcaption>
-                </figure>
-                <h5>Герой ваших серий — город. Вы будто ловите впечатление от мест и потом переносите их в графические листы. Как город и поездки вплетены в вашу повседневность?</h5>
-                <p>Я люблю гулять, наблюдать и чувствовать города. Ощущение от мест сложно сформулировать словами. Когда делала серию, посвященную Петербургу, я увлекалась поэзией и хотела как-то связать работы с Бродским. Тогда еще не было музея «Полторы комнаты», но был фонд по созданию музея. Я подружилась с ребятами, которые там работали, и попала в будущее пространство. Мне казалось, что я почувствую нечто особенное и у меня получится сделать что-то по поводу Бродского, но ничего не вышло. Зато получилась целая цепочка удивительных и счастливых знакомств. Потом я просто гуляла по Петербургу, но никак не могла найти язык, чтобы выразить чувства. Уже в Москве я пришла к квадрату 31 на 31 см, к лаконичности и звуку. Работы в серии музыкальные, в них есть определенный ритм.<br><br>А потом возникла серия такого же камерного формата, посвященная Москве. У нее совсем другое ощущение и совсем другой звук. Москва разная, не такая цельная, как Петербург, и в этом ее прелесть. Иногда устаешь от этой фрагментарности, но порой она, наоборот, становится важной и ощущается как музыкальная импровизация. Так получилась серия «Московский регтайм».</p>
-                <div class="single-heroes df jcsb">
-                  <div class="single-heroes__item"><img class="single-heroes__item-img" src="img/heroes-5.png" alt="">
-                    <div class="single-heroes__item-text">Весна в «Красном доме», 2016 <br>Из серии «Московский регтайм»<br>Бумага, офорт, 31×31 см</div>
-                  </div>
-                  <div class="single-heroes__item"><img class="single-heroes__item-img" src="img/heroes-6.png" alt="">
-                    <div class="single-heroes__item-text">Утро на Тверской, 2016 <br>Из серии «Московский регтайм» <br>Бумага, офорт, 31×31 см</div>
-                  </div>
-                </div>
-                <h6>Что будет на вашей выставке в Казани?</h6>
-                <p>Новая серия «Вечный пейзаж», которую я начала в 2020 году, когда долгое время сидела в помещении, а потом появилась возможность выехать за город. Была весна, я чувствовала что-то невероятное, будто бы все начинается заново. Я поняла, насколько я, как человек, маленькая в сравнении с простором природы вокруг. Мне захотелось выразить это — так и появилась серия. Она еще не закончена, буду показывать ее с открытым финалом. <br><br>Также будет несколько московских серий и по одной посвященной Петербургу, Грузии, Свияжску. Еще — сквозной цикл о дороге. Так сложилось, что мой первый офорт в 2008 году был посвящен железной дороге. Пути и пересекающиеся провода наполнили мне нотный стан или иероглифы. Я стала развивать эту тему и делать лист с дорогой каждый раз, когда заканчиваю серию. <br><br>Впервые приоткрою свой творческий процесс и покажу несколько досок, созданных на разных стадиях работы над циклом по Свияжску.</p>
-              </div>
-              <div class="article-center article-margin">
-                <div class="single-bottomText">Обложка: Kinopoisk; фото: 1 — Mentalfilmfest; 2 — Reactor-art; 3 — Kazan-kremlin; 4 — Hor.viktorgolumbevskii; 5 — Tg; 6 — YouTube; 7 — Vk; 8 — Vk; 9  — Vk; 10 — Tg; 11 — Vk; 12 — Kinopoisk; 13 — Kazan-tuz; 14 — Ugolkazan; 15 — Ugolkazan; 16 — Belova-art-gallery; 17 — Vk; 18 — Vk</div>
-              </div>
-              <div class="article-center article-margin">
-                <div class="article-soc df aifs jcsb">
-                  <div class="article-soc__title">Поделиться статьей:</div>
-                  <div class="article-soc__links df aic"><a class="contact-link btn" href="#" target="_blank">Вконтакте</a><a class="contact-link btn" href="#" target="_blank">Telegram</a><a class="contact-link btn" href="#" target="_blank">Instagram*</a></div>
-                </div>
-                <div class="article-bottom df aic jcsb"><a class="article-back dif aic link posr transition" href="#">Ко всем статьям</a>
-                  <div class="article-bottom__text">*Instagram — деятельность <br>на территории РФ запрещена</div>
-                </div>
-              </div>
-              <div class="article-other posa">
-                <div class="article-other__title accent-color">Далее по теме:</div>
-                <div class="article-other__list">
-                  <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
-                    <div class="article-other__item-title accent-color">Коктейль за сторис в Roof Gastro Bar, летняя  распродажа в NYX и акция на книги от Ozon</div>
-                  </div>
-                  <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
-                    <div class="article-other__item-title accent-color">Свобода воли vs  нейробиология—  как люди выбирают? </div>
-                  </div>
-                  <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
-                    <div class="article-other__item-title accent-color">Сгущенка с нори, сырники  с томатным джемом и пицца  с кониной</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <section class="other-blog">
-        <div class="container">
-          <div class="home-blog__title center">Может быть инетресно</div>
-          <div class="city-items row">
-            <div class="city-items__block col">
-              <div class="home-blog__box posr df direction">
-                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a>
-                <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-            </div>
-            <div class="city-items__block col">
-              <div class="home-blog__box posr df direction">
-                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-2.png" alt=""></a>
-                <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a><a class="home-blog__item-btn btn" href="#">Перейти</a></div>
-              </div>
-            </div>
-            <div class="city-items__block col">
-              <div class="home-blog__box posr df direction">
-                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a>
-                <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
-                  <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-            </div>
-            <div class="city-items__block col">
-              <div class="home-blog__box posr df direction">
-                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a>
-                <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="contact">
-          <div class="container">
-            <div class="contact-wrapper">
-              <div class="contact-list df jcsb">
-                <div class="contact-left"><img class="contact-img img" src="img/contact.png" alt=""></div>
-                <div class="contact-right df direction">
-                  <h2 class="contact-title">Будем ближе</h2><img class="contact-mobile hide" src="img/contact.png" alt="">
-                  <div class="contact-subtitle">Присоединяйтесь к нашему сообществу в социальных сетях, чтобы быть в курсе последних новостей, эксклюзивных интервью, обзоров и аналитических материалов. Будьте в тренде вместе с нами!</div>
-                  <div class="contact-links"><a class="contact-link btn" href="#" target="_blank">Вконтакте</a><a class="contact-link btn" href="#" target="_blank">Telegram</a><a class="contact-link btn" href="#" target="_blank">Instagram*</a></div>
-                  <div class="contact-bottomText">*Instagram Meta Platforms Inc. запрещено на террритории Росии</div>
-                </div>
-              </div>
-            </div>
-            <div class="contact-bottom">
-              <div class="contact-bottom__wrapper">
-                <div class="contact-bottom__title">Будьте в курсе последних событий</div>
-                <form class="contact-form">
-                  <div class="contact-form__list df fxw jcsb">
-                    <div class="contact-form__left">
-                      <div class="contact-form__input df aic"><b>E-mail:</b>
-                        <input class="df aic" type="email" placeholder="example@555.com" required>
-                      </div>
-                      <div class="contact-form__input df aic"><b>Тема:</b>
-                        <div class="select">
-                          <select>
-                            <option value="Все темы" selected>Все темы</option>
-                            <option value="Все темы">Все темы</option>
-                            <option value="Все темы">Все темы</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="contact-form__right df direction">
-                      <button class="contact-form__btn btn">Подписаться</button>
-                      <div class="contact-form__policy">Нажимая на «Подписаться», я соглашаюсь с&nbsp;<a href="#">обработкой персональных данных</a></div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-list row footer-top">
-            <div class="footer-block col"><a class="footer-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a></div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">Город</a></li>
-                  <li><a href="#">Еда</a></li>
-                  <li><a href="#">Герои</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">Путешествия</a></li>
-                  <li><a href="#">Искусство</a></li>
-                  <li><a href="#">Прошлое</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">О проекте</a></li>
-                  <li><a href="#">Амбассадоры «Инде»</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">Рекламодателям</a></li>
-                  <li><a href="#">Вакансии</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="footer-line"></div>
-          <div class="footer-list row footer-center">
-            <div class="footer-block col"></div>
-            <div class="footer-block col">
-              <div class="footer-item">
-                <div class="footer-item__title">Общий контакт редакции:</div>
-                <div class="footer-item__text"><a href="mailto:hello@inde.io">hello@inde.io</a></div>
-                <div class="footer-item__text"><a href="#" target="_blank">VK</a><a href="#" target="_blank">Telegram</a></div>
-              </div>
-            </div>
-            <div class="footer-block col">
-              <div class="footer-item">
-                <div class="footer-item__title">Обсудить рекламу:</div>
-                <div class="footer-item__text"><a href="mailto:ad@inde.io">ad@inde.io</a></div>
-              </div>
-            </div>
-            <div class="footer-block col">
-              <div class="footer-item">
-                <div class="footer-item__title">Некоммерческие проекты и&nbsp;информационное партнерство:</div>
-                <div class="footer-item__text"><a href="mailto:pr@inde.io">pr@inde.io</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="footer-list row footer-bottom">
-            <div class="footer-block col">
-              <div class="footer-bottom__text">Инде. 2015-2024</div>
-            </div>
-            <div class="footer-block col">
-              <div class="footer-bottom__text"><a class="dif link transition" href="#">Соглашения и правила</a></div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <div class="modals">
-        <div class="modal" id="success" data-modal>
-          <div class="modal-overlay" data-modal-overlay></div>
-          <div class="modal-list">
-            <div class="modal-container">
-              <div class="modal-close" data-modal-close></div>
-              <svg class="modal-icon">
-                <use xlink:href="img/sprite.svg#modal-check"></use>
-              </svg>
-              <div class="center">
-                <div class="modal-title">Спасибо!</div>
-                <div class="modal-subtitle">Ваша заявка успешно отправлена</div>
-              </div><img class="modal-logo img" src="img/logo.svg" alt="">
-            </div>
+    </footer>
+    <div class="modals">
+      <div class="modal" id="success" data-modal>
+        <div class="modal-overlay" data-modal-overlay></div>
+        <div class="modal-list">
+          <div class="modal-container">
+            <div class="modal-close" data-modal-close></div>
+            <svg class="modal-icon">
+              <use xlink:href="img/sprite.svg#modal-check"></use>
+            </svg>
+            <div class="center">
+              <div class="modal-title">Спасибо!</div>
+              <div class="modal-subtitle">Ваша заявка успешно отправлена</div>
+            </div><img class="modal-logo img" src="img/logo.svg" alt="">
           </div>
         </div>
       </div>
     </div>
-    <script src="libs/swiper/swiper-bundle.min.js"></script>
-    <script src="libs/nice-select2/nice-select2.js"></script>
-    <script src="libs/fslightbox.js"></script>
-    <script src="js/main.js?v=1.14"></script>
-  </body>
+  </div>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/nice-select2/nice-select2.js"></script>
+  <script src="libs/fslightbox.js"></script>
+  <script src="js/main.js?v=1.15"></script>
+</body>
+
 </html>
