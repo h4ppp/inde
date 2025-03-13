@@ -464,7 +464,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //images hover aniamted
-    document.querySelectorAll(".anim-block .swiper").forEach((swiperEl) => {
+    document.querySelectorAll(".hover-slider").forEach((swiperEl) => {
         const swiper = new Swiper(swiperEl, {
             slidesPerView: 1,
             loop: true,
