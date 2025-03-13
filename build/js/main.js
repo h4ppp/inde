@@ -462,6 +462,25 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+
+    //images hover aniamted
+    document.querySelectorAll(".anim-block .swiper").forEach((swiperEl) => {
+        const swiper = new Swiper(swiperEl, {
+            slidesPerView: 1,
+            loop: true,
+            speed: 600, // Плавность перелистывания
+        });
+
+        swiperEl.addEventListener("mouseenter", () => {
+            swiper.params.autoplay.delay = 500;
+            swiper.autoplay.start();
+        });
+
+        swiperEl.addEventListener("mouseleave", () => {
+            swiper.slideToLoop(0, 600); // Плавный возврат на первый слайд
+            swiper.autoplay.stop();
+        });
+    });
 });
 
 //modals
