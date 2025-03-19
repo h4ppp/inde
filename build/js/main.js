@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     blogSliders.forEach(function (slider) {
         const index = slider.dataset.slider;
+
         const swiperBlog = new Swiper(`[data-slider="${index}"]`, {
             slidesPerView: "auto",
             spaceBetween: 8,
@@ -100,7 +101,29 @@ document.addEventListener("DOMContentLoaded", function () {
                     freeMode: true,
                 },
             },
+            on: {
+                init: function () {
+                    updateButton(this);
+                },
+                slideChange: function () {
+                    updateButton(this);
+                },
+            },
         });
+
+        function updateButton(swiper) {
+            const animateBtnContainer = document.querySelector(".one-button__animate-btn");
+            if (animateBtnContainer) {
+                animateBtnContainer.innerHTML = "";
+                const activeSlide = swiper.slides[swiper.activeIndex];
+                const button = activeSlide.querySelector(".home-blog__item-btn");
+
+                if (button) {
+                    const buttonClone = button.cloneNode(true);
+                    animateBtnContainer.appendChild(buttonClone);
+                }
+            }
+        }
     });
 
     const swiperAmbassador = new Swiper(".ambassadorOther-slider", {
@@ -170,6 +193,15 @@ document.addEventListener("DOMContentLoaded", function () {
     //nice select2
     document.querySelectorAll(".select select").forEach(function (item) {
         NiceSelect.bind(item);
+    });
+
+    const selectContainers = document.querySelectorAll(".select");
+
+    selectContainers.forEach((selectContainer) => {
+        const selectElement = selectContainer.querySelector("select");
+        selectElement.addEventListener("change", function () {
+            selectContainer.classList.add("active-select");
+        });
     });
 
     //toggle menu
@@ -294,9 +326,12 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelectorAll("[data-accordion]").forEach((acc) => {
                 if (acc !== accordion) {
                     acc.classList.remove("active");
+                    slideUp(acc.querySelector(".vacancies-accordion__item-content"));
                 }
             });
             accordion.classList.toggle("active");
+            let content = accordion.querySelector(".vacancies-accordion__item-content");
+            slideToggle(content);
         });
     });
 
@@ -510,4 +545,80 @@ function modalClose() {
         openModal.style.display = "none";
         openModal.classList.remove("modal-open");
     }
+}
+
+function slideToggle(element, duration = 300) {
+    if (typeof element === "string") {
+        element = document.querySelector(element);
+    }
+    if (!element) return;
+
+    const isHidden = window.getComputedStyle(element).display === "none";
+    element.style.overflow = "hidden";
+    if (isHidden) {
+        element.style.display = "block";
+        let height = element.scrollHeight;
+        element.style.height = "0px";
+
+        let start;
+        function animateOpen(time) {
+            if (!start) start = time;
+            let progress = (time - start) / duration;
+            if (progress > 1) progress = 1;
+            element.style.height = progress * height + "px";
+
+            if (progress < 1) {
+                requestAnimationFrame(animateOpen);
+            } else {
+                element.style.height = "";
+            }
+        }
+        requestAnimationFrame(animateOpen);
+    } else {
+        let height = element.scrollHeight;
+        element.style.height = height + "px";
+
+        let start;
+        function animateClose(time) {
+            if (!start) start = time;
+            let progress = (time - start) / duration;
+            if (progress > 1) progress = 1;
+            element.style.height = (1 - progress) * height + "px";
+
+            if (progress < 1) {
+                requestAnimationFrame(animateClose);
+            } else {
+                element.style.display = "none";
+                element.style.height = "";
+            }
+        }
+        requestAnimationFrame(animateClose);
+    }
+}
+
+function slideUp(element, duration = 500) {
+    if (typeof element === "string") {
+        element = document.querySelector(element);
+    }
+    if (!element) return;
+
+    let height = element.scrollHeight;
+    element.style.height = height + "px";
+    element.style.overflow = "hidden";
+
+    let start;
+    function animateClose(time) {
+        if (!start) start = time;
+        let progress = (time - start) / duration;
+        if (progress > 1) progress = 1;
+        element.style.height = (1 - progress) * height + "px";
+
+        if (progress < 1) {
+            requestAnimationFrame(animateClose);
+        } else {
+            element.style.display = "none";
+            element.style.height = "";
+        }
+    }
+    requestAnimationFrame(animateClose);
 }

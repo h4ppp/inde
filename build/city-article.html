@@ -1,609 +1,620 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Заголовок</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="img/favicon.svg">
-    <link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="libs/nice-select2/nice-select2.css" rel="stylesheet">
-    <link href="libs/modal.css" rel="stylesheet">
-    <link href="libs/start.css" rel="stylesheet">
-    <link href="css/main.css?v=1.14" rel="stylesheet">
-  </head>
-  <body>
-    <div class="page-wrapper df direction">
-      <div class="page-menu">
-        <div class="page-menu__container">
-          <nav class="page-menu__nav">
-            <ul>
-              <li><a href="#">Город</a>
+
+<head>
+  <meta charset="utf-8">
+  <title>Заголовок</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="img/favicon.svg">
+  <link href="libs/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="libs/nice-select2/nice-select2.css" rel="stylesheet">
+  <link href="libs/modal.css" rel="stylesheet">
+  <link href="libs/start.css" rel="stylesheet">
+  <link href="css/main.css?v=1.14" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-wrapper df direction">
+    <div class="page-menu">
+      <div class="page-menu__container">
+        <nav class="page-menu__nav">
+          <ul>
+            <li><a href="#">Город</a>
+              <ul>
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Новое место</a></li>
+                <li><a href="#">Еда</a></li>
+                <li><a href="#">Альметьевск</a></li>
+                <li><a href="#">Набережные челны</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Герои</a></li>
+            <li><a href="#">Путешествия</a>
+              <ul>
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Казань</a></li>
+                <li><a href="#">Альметьевск</a></li>
+                <li><a href="#">Набережные челны</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Искусство</a>
+              <ul>
+                <li><a href="#">Все</a></li>
+                <li><a href="#">Музыка</a></li>
+                <li><a href="#">Живопись</a></li>
+                <li><a href="#">Литература</a></li>
+                <li><a href="#">Театр</a></li>
+                <li><a href="#">Фотография </a></li>
+                <li><a href="#">Выставки</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Прошлое</a></li>
+            <li><a href="#">Еще</a>
+              <ul>
+                <li><a href="#">Вакансии</a></li>
+                <li><a href="#">Рекламодателям</a></li>
+                <li><a href="#">Амбассадоры инде</a></li>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Соглашения и правила</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="page-menu__mobile hide">
+          <div class="footer-item">
+            <div class="footer-item__title">Общий контакт редакции:</div>
+            <div class="footer-item__text"><a href="mailto:hello@inde.io">hello@inde.io</a></div>
+            <div class="footer-item__text"><a href="#" target="_blank">VK</a><a href="#" target="_blank">Telegram</a></div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item__title">Обсудить рекламу:</div>
+            <div class="footer-item__text"><a href="mailto:ad@inde.io">ad@inde.io</a></div>
+          </div>
+          <div class="footer-item">
+            <div class="footer-item__title">Некоммерческие проекты и&nbsp;информационное партнерство:</div>
+            <div class="footer-item__text"><a href="mailto:pr@inde.io">pr@inde.io</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <form class="mobile-search">
+      <div class="mobile-search__container df direction">
+        <input class="mobile-search__input df aic" type="text" placeholder="Найти">
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
+        <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
+      </div>
+    </form>
+    <div class="top-fixed">
+      <div class="green-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+          <div class="swiper-slide">
+            <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="container">
+          <div class="header-list df aifs">
+            <div class="header-burger cursor transition">
+              <svg>
+                <use xlink:href="img/sprite.svg#burger"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </div><a class="header-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a>
+            <div class="header-mobile__search cursor hide transition">
+              <svg>
+                <use xlink:href="img/sprite.svg#search"></use>
+              </svg>
+              <svg>
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </div>
+            <div class="header-right">
+              <form class="header-search df aic posr">
+                <div class="header-search__icon db">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </div>
+                <input class="header-search__input df aic" type="text" placeholder="Найти">
+                <div class="header-search__clear posa db cursor"></div>
+                <button class="header-search__btn df aic jcc link transition cursor">Найти</button>
+                <div class="header-search__results posa">
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
+                  <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
+                </div>
+              </form>
+              <nav class="header-nav">
                 <ul>
-                  <li><a href="#">Все</a></li>
-                  <li><a href="#">Новое место</a></li>
+                  <li><a href="#">Город</a></li>
                   <li><a href="#">Еда</a></li>
-                  <li><a href="#">Альметьевск</a></li>
-                  <li><a href="#">Набережные челны</a></li>
+                  <li><a href="#">Герои</a></li>
+                  <li><a href="#">Путешествия</a></li>
+                  <li><a href="#">Искусство</a></li>
+                  <li><a href="#">Прошлое</a></li>
+                  <li><a href="#">Еще</a>
+                    <ul>
+                      <li><a href="#">Вакансии</a></li>
+                      <li><a href="#">Рекламодателям</a></li>
+                      <li><a href="#">Амбассадоры инде</a></li>
+                      <li><a href="#">О проекте</a></li>
+                      <li><a href="#">Соглашения и правила</a></li>
+                    </ul>
+                  </li>
                 </ul>
-              </li>
-              <li><a href="#">Герои</a></li>
-              <li><a href="#">Путешествия</a>
-                <ul>
-                  <li><a href="#">Все</a></li>
-                  <li><a href="#">Казань</a></li>
-                  <li><a href="#">Альметьевск</a></li>
-                  <li><a href="#">Набережные челны</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Искусство</a>
-                <ul>
-                  <li><a href="#">Все</a></li>
-                  <li><a href="#">Музыка</a></li>
-                  <li><a href="#">Живопись</a></li>
-                  <li><a href="#">Литература</a></li>
-                  <li><a href="#">Театр</a></li>
-                  <li><a href="#">Фотография </a></li>
-                  <li><a href="#">Выставки</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Прошлое</a></li>
-              <li><a href="#">Еще</a>
-                <ul>
-                  <li><a href="#">Вакансии</a></li>
-                  <li><a href="#">Рекламодателям</a></li>
-                  <li><a href="#">Амбассадоры инде</a></li>
-                  <li><a href="#">О проекте</a></li>
-                  <li><a href="#">Соглашения и правила</a></li>
-                </ul>
-              </li>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="color-wrapper blue-block index page-single">
+      <div class="left-line"><span class="accent-color">Город</span></div>
+      <main class="main">
+        <div class="container">
+          <div class="main-wrapper posr">
+            <div class="main-slider swiper">
+              <div class="main-next posa cursor"></div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
+                    <div class="main-item__subtitle">Кирилл Сафронов</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village </div>
+                    <div class="main-item__subtitle">Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Свобода воли vs нейробиология — как люди выбирают?</div>
+                    <div class="main-item__subtitle">Что посмотреть</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">«Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
+                    <div class="main-item__subtitle">Кирилл Сафронов</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village </div>
+                    <div class="main-item__subtitle">Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Свобода воли vs нейробиология — как люди выбирают?</div>
+                    <div class="main-item__subtitle">Что посмотреть</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
+                    <div class="main-item__title accent-color">«Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="single-fixed df">
+        <div class="single-fixed__buttons df"><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b1">Введение</a><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b2">Якорь №2</a><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b3">Якорь №3</a></div>
+        <div class="single-fixed__btn bg-color dif aic">Содержание<br>статьи</div>
+      </div>
+      <section class="single single-city">
+        <div class="container">
+          <div class="single-top df direction fxw" id="b1"><img class="single-top__img" src="img/city-banner.png" alt="">
+            <div class="article-center article-margin single-top__wrapper">
+              <div class="single-top__list df fxw jcsb">
+                <div class="single-top__text accent-color">Анна Абрамова</div>
+                <div class="single-top__text single-top__date accent-color">11 июля 2024 в 16:19</div>
+                <div class="single-top__text accent-color">7 минут</div>
+              </div>
+            </div>
+          </div>
+          <div class="single-box index">
+            <div class="single-box__list">
+              <div class="single-cats df aic fxw">
+                <div class="single-cats__item dif aic">Город</div>
+                <div class="single-cats__item dif aic">Новое место</div>
+              </div>
+              <div class="article-top__share hide aic posa">
+                <span>SHARE</span>
+                <div class="article-top__share-wrapper">
+                  <a class="db link" href="#">Tweet</a>
+                  <a class="db link" href="#">Post</a>
+                  <a class="db link" href="#">E-mail</a>
+                </div>
+              </div>
+            </div>
+            <h1 class="single-title accent-color">В Казани все есть. 41 летняя веранда и терраса города</h1>
+          </div>
+          <div class="single-breadcrumbs df aic jcsb">
+            <ul class="breadcrumbs-list">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Город</a></li>
+              <li>В Казани все есть. 41 летняя веранда и терраса города</li>
             </ul>
-          </nav>
-          <div class="page-menu__mobile hide">
+            <div class="article-top__lang df aic"><a class="active" href="#">РУС</a><span></span><a href="#">ТАТ</a></div>
+          </div>
+          <div class="article-wrapper posr" id="b2">
+            <div class="article-share posa">
+              <div class="article-share__title">SHARE <br>THIS<br>ARTICLE</div>
+              <div class="article-share__links"><a class="article-share__link db link transition" href="#" data-copy="copied text!!!">Сopy link</a><a class="article-share__link db link" href="#">Vk</a><a class="article-share__link db link" href="#">Telegram</a><a class="article-share__link db link" href="#">WhatsApp</a></div>
+            </div>
+            <div class="single-content article-center article-margin">
+              <h2 class="single-content__title accent-color">Рассказы об истории регионального пива, экскурсия по производству и обязательная дегустация</h2>
+              <p>8 августа при заводе «Белый Кремль» в Чистополе открылся фирменный магазин-музей, посвященный пивоварению. Хоть сама история создания татарстанского пива насчитывает 151 год, это первый подобный музей в республике. «Инде» побывал в нем и рассказывает, когда в регионе начали варить крафтовое пиво (спойлер: очень давно), откуда появилась пивоварня «Красный Восток» и как Чистополь остался без света из-за нового пивоваренного завода.</p>
+              <figure class="full-width"><img src="img/city-1.png" alt="">
+                <figcaption>Фото: Галина Овчинникова</figcaption>
+              </figure>
+              <h3>151 год истории татарстанского пивоварения</h3>
+              <p>Магазин-музей представляет собой здание со стеклянным фасадом, встроенное прямо в цеха пивоваренного завода в индустриальном парке «Чистополь» (1,2 километра от города). Внутри — большая комната, разделенная на две зоны. Первая, поменьше, — это магазин, где продается вся продукция компании «Татспиртпром», включая пиво, сваренное здесь. Остальное пространство отдано музею.</p>
+              <div class="ambassador-slider__wrapper posr">
+                <div class="ambassador-slider swiper">
+                  <div class="ambassador-arrow ambassador-arrow__prev posr posa cursor"></div>
+                  <div class="ambassador-arrow ambassador-arrow__next posr posa cursor"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="ambassador-slider__item df aifs">
+                        <div class="ambassador-slider__item-text">Подпись к картинке</div><img class="ambassador-slider__item-img img" src="img/city-2.png" alt="">
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="ambassador-slider__item df aifs">
+                        <div class="ambassador-slider__item-text">Подпись к картинке</div><img class="ambassador-slider__item-img img" src="img/ambassador.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ambassador-info">
+                <div class="ambassador-info__list df aifs">
+                  <div class="ambassador-info__left">
+                    <div class="ambassador-info__title">2023 <br>Сэл Андерсон (Великобритания) 60&nbsp;минут</div>
+                    <div class="ambassador-info__subtitle">Когда: 10 октября в 19:00 <br>Где: ЦСК «Смена», ул. Б. Шахиди, 7 Вход: 350 ₽</div>
+                  </div>
+                  <div class="ambassador-info__text">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в Corstore17 Собственное производство, апсайкл-коллекции и «интеллектуальная женственность» в Corstore17 Собственное производство, апсайклколлекции и «интеллектуальная женственность» в Corstore17 Собственное производство, апсайклколлекции и «интеллектуальная женственность» в Corstore1</div>
+                </div>
+              </div>
+              <p>Музей открывает фотозона, в которой отражена история известных в Татарстане и Волжско-Камском регионе пивоварен. Тут можно узнать, что до 1867 года пивоварение у нас было представлено только ремесленными мастерскими, которые варили то, что сегодня бы назвали крафтом: небольшие партии напитков для одной улицы или района. История промышленного производства начинается с выходца из известной немецкой семьи Петцольд, прусского подданного Карла-Вильгельма-Эдуарда-Гейнриха Петцольда, который в 1867 году основал в Казани пивоваренный завод. Его дело продолжил старший сын Оскар Петцольд. Пиво, которое он выпускал на заводе «Восточная Бавария» на улице Тукая в Старо-Татарской слободе, завоевало популярность по всей Казанской губернии и далеко за ее пределами. <br><br>В 1892-м часть производственных мощностей завода Оскара Петцольда выкупают наследники Василия Александрова, знаменитого пивовара из Вятской губернии. В 1914 году завод Александровых получал золотые медали на выставках во Флоренции, Лондоне, Париже, Брюсселе, Амстердаме и Бордо. <br><br>В 1914 году, когда Николай II после начала Первой мировой объявил «сухой закон», казанские производства перепрофилировали и стали выпускать прохладительные напитки — квасы и лимонады. Во время революции 1917 года семья Александровых эмигрировала из страны, а в 1918 году завод передали Совнаркому сельского хозяйства. В 1922 году все казанские пивзаводы советская власть объединила в новое социалистическое предприятие под названием «Красный Восток». А в 1981-м в связи с необходимостью увеличить мощности производства пива в городе Брежневе (сегодня Набережные Челны) построили вторую татарстанскую пивоварню. Ее назвали «Набережночелнинский пивобезалкогольный завод» (сейчас «Булгарпиво»). В 2006-м комплекс заводов «Красный Восток» перекупила турецкая компания Efes, и он превратился в один из четырех филиалов компании в России. А в 1994 году пивоварня «Булгарпиво» перешла под контроль чувашской компании «Букет Чувашии». Теперь нишу локального пивного производства занял проект Татспиртпрома «Белый Кремль». На чистопольском заводе выпускают пять видов пива: «Старая Казань», «Белый Кремль», «Кама», «Жигулевское» и CZ. Первую партию товара отгрузили в начале августа 2018 года.</p>
+              <div class="single-content__blockqoute" id="b3">
+                <div class="single-content__blockqoute-left"><img class="single-content__blockqoute-img" src="img/blockqoute.png" alt="">
+                  <div class="single-content__blockqoute-name">Мария Смольянинова художница</div>
+                </div>
+                <div class="single-content__blockqoute-text">«Идеей открыть при заводе магазин-музей мы обязаны городу. Чистополь находится в центре республики, на берегу Камы: это очень старый город с богатой историей, здесь развит круизный туризм. Музей изначально был внесен в проект завода — мы надеемся, что это поможет городу увеличить поток туристов. На прошлой неделе здесь было до500 посетителей, потому что летом в Татарстан часто приезжают.»</div>
+              </div>
+              <figure class="full-width"><img src="img/city-3.png" alt="">
+                <figcaption>Фото: Галина Овчинникова</figcaption>
+              </figure>
+              <h4>Основные ингредиенты, которые используются для приготовления пива</h4>
+              <div class="single-city__info posr">
+                <div class="single-city__info-item df">
+                  <div class="single-city__info-title">ВОДА</div>
+                  <div class="single-city__info-text">Музей открывает фотозона, в которой отражена история известных в Татарстане и Волжско-Камском регионе пивоварен. Тут можно узнать, что до 1867 года пивоварение у нас было представлено только ремесленными мастерскими, которые варили то, что сегодня бы назвали крафтом: небольшие партии напитков для одной улицы или района. История промышленного производства начинается с выходца из известной немецкой семьи Петцольд, прусского подданного Карла-Вильгельма-Эдуарда-Гейнриха Петцольда, который в 1867 году основал в Казани пивоваренный завод. Его дело продолжил старший сын Оскар Петцольд. Пиво, которое он выпускал на заводе «Восточная Бавария» на улице Тукая в Старо-Татарской слободе, завоевало популярность по всей Казанской губернии и далеко за ее пределами.<br><br>В 1892-м часть производственных мощностей завода Оскара Петцольда выкупают наследники Василия Александрова, знаменитого пивовара из Вятской губернии. В 1914 году завод Александровых получал золотые медали на выставках во Флоренции, Лондоне, Париже, Брюсселе, Амстердаме и Бордо.</div>
+                </div>
+                <div class="single-city__info-item df">
+                  <div class="single-city__info-title">СОЛОД</div>
+                  <div class="single-city__info-text">Музей открывает фотозона, в которой отражена история известных в Татарстане и Волжско-Камском регионе пивоварен. Тут можно узнать, что до 1867 года пивоварение у нас было представлено только ремесленными мастерскими, которые варили то, что сегодня бы назвали крафтом: небольшие партии напитков для одной улицы или района. История промышленного производства начинается с выходца из известной немецкой семьи Петцольд, прусского подданного Карла-Вильгельма-Эдуарда-Гейнриха Петцольда, который в 1867 году основал в Казани пивоваренный завод. Его дело продолжил старший сын Оскар Петцольд. Пиво, которое он выпускал на заводе «Восточная Бавария» на улице Тукая в Старо-Татарской слободе, завоевало популярность по всей Казанской губернии и далеко за ее пределами.<br><br>В 1892-м часть производственных мощностей завода Оскара Петцольда выкупают наследники Василия Александрова, знаменитого пивовара из Вятской губернии. В 1914 году завод Александровых получал золотые медали на выставках во Флоренции, Лондоне, Париже, Брюсселе, Амстердаме и Бордо.</div>
+                </div>
+                <div class="single-city__info-blue">Свобода воли vs нейробиология — как люди выбирают? Свобода воли vs нейробиология — как люди выбирают? Свобода воли vs нейробиология — как люди выбирают?</div>
+              </div>
+              <blockquote>«Свобода воли vs нейробиология — как люди выбирают? Свобода воли vs нейробиология — как люди выбирают? Свобода воли vs нейробиология — как люди выбирают?»</blockquote>
+              <div class="single-city__button df aic jcsb">
+                <div class="single-city__button-title">Тест: «Какой ты пивовар»</div><a class="single-city__button-right home-blog__item-btn btn" href="#">Начать тест</a>
+              </div>
+              <figure><img src="img/city-4.png" alt="">
+                <figcaption>Фото: Галина Овчинникова</figcaption>
+              </figure>
+              <div class="single-city__item">
+                <div class="single-city__title">Стоимость продукции</div>
+                <div class="single-city__price">
+                  <div class="single-city__price-item">
+                    <div class="single-city__price-left">Светлое пиво</div>
+                    <div class="single-city__price-line"></div>
+                    <div class="single-city__price-right">100 рублей</div>
+                  </div>
+                  <div class="single-city__price-item">
+                    <div class="single-city__price-left">Светлое пиво</div>
+                    <div class="single-city__price-line"></div>
+                    <div class="single-city__price-right">120 рублей</div>
+                  </div>
+                  <div class="single-city__price-item">
+                    <div class="single-city__price-left">Безалкогольное пиво</div>
+                    <div class="single-city__price-line"></div>
+                    <div class="single-city__price-right">140 рублей</div>
+                  </div>
+                  <div class="single-city__price-item">
+                    <div class="single-city__price-left">Разливное пиво</div>
+                    <div class="single-city__price-line"></div>
+                    <div class="single-city__price-right">200 рублей</div>
+                  </div>
+                  <div class="single-city__price-item">
+                    <div class="single-city__price-left">Живое пиво</div>
+                    <div class="single-city__price-line"></div>
+                    <div class="single-city__price-right">200 рублей</div>
+                  </div>
+                </div>
+              </div>
+              <div class="single-city__item">
+                <div class="single-city__title">Где находится</div>
+                <div class="single-city__contact">
+                  <div class="single-city__contact-item df aifs">
+                    <div class="single-city__contact-title">АДРЕС</div>
+                    <div class="single-city__contact-text">Индустриальный парк «Чистополь» (1,2 километра от города Чистополя в&nbsp;сторону поселка Юлдуз)</div>
+                  </div>
+                  <div class="single-city__contact-item df aifs">
+                    <div class="single-city__contact-title">РЕЖИМ <br>РАБОТЫ</div>
+                    <div class="single-city__contact-text">Ежедневно с 10:00 до 22:00 <br>Экскурсии ежедневно с 10:00 до 17:00</div>
+                  </div>
+                  <div class="single-city__contact-item df aifs">
+                    <div class="single-city__contact-title">ТЕЛЕФОН</div>
+                    <div class="single-city__contact-text"><a href="tel:+79272443666">+7 (927) 244-36-66</a></div>
+                  </div>
+                  <div class="single-city__contact-item df aifs">
+                    <div class="single-city__contact-title">ЦЕНА</div>
+                    <div class="single-city__contact-text">входной билет с экскурсией — 100 ₽, <br>входной билет с экскурсией и дегустацией — 250 ₽</div>
+                  </div>
+                </div>
+              </div>
+              <figure class="full-width"><img src="img/city-5.png" alt="">
+                <figcaption>Фото: Галина Овчинникова</figcaption>
+              </figure>
+            </div>
+            <div class="article-center article-margin">
+              <div class="single-bottomText">Обложка: Kinopoisk; фото: 1 — Mentalfilmfest; 2 — Reactor-art; 3 — Kazan-kremlin; 4 — Hor.viktorgolumbevskii; 5 — Tg; 6 — YouTube; 7 — Vk; 8 — Vk; 9 — Vk; 10 — Tg; 11 — Vk; 12 — Kinopoisk; 13 — Kazan-tuz; 14 — Ugolkazan; 15 — Ugolkazan; 16 — Belova-art-gallery; 17 — Vk; 18 — Vk</div>
+            </div>
+            <div class="article-center article-margin">
+              <div class="article-soc df aifs jcsb">
+                <div class="article-soc__title">Поделиться статьей:</div>
+                <div class="article-soc__links df aic"><a class="contact-link btn" href="#" target="_blank">Вконтакте</a><a class="contact-link btn" href="#" target="_blank">Telegram</a><a class="contact-link btn" href="#" target="_blank">Instagram*</a></div>
+              </div>
+              <div class="article-bottom df aic jcsb"><a class="article-back dif aic link posr transition" href="#">Ко всем статьям</a>
+                <div class="article-bottom__text">*Instagram — деятельность <br>на территории РФ запрещена</div>
+              </div>
+            </div>
+            <div class="article-other posa">
+              <div class="article-other__title accent-color">Далее по теме:</div>
+              <div class="article-other__list">
+                <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
+                  <div class="article-other__item-title accent-color">Коктейль за сторис в Roof Gastro Bar, летняя распродажа в NYX и акция на книги от Ozon</div>
+                </div>
+                <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
+                  <div class="article-other__item-title accent-color">Свобода воли vs нейробиология— как люди выбирают? </div>
+                </div>
+                <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
+                  <div class="article-other__item-title accent-color">Сгущенка с нори, сырники с томатным джемом и пицца с кониной</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section class="other-blog">
+      <div class="container">
+        <div class="home-blog__title center">Может быть инетресно</div>
+        <div class="city-items row">
+          <div class="city-items__block col">
+            <div class="home-blog__box posr df direction">
+              <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a>
+              <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+          </div>
+          <div class="city-items__block col">
+            <div class="home-blog__box posr df direction">
+              <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-2.png" alt=""></a>
+              <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a><a class="home-blog__item-btn btn" href="#">Перейти</a></div>
+            </div>
+          </div>
+          <div class="city-items__block col">
+            <div class="home-blog__box posr df direction">
+              <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a>
+              <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
+                <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+          </div>
+          <div class="city-items__block col">
+            <div class="home-blog__box posr df direction">
+              <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a>
+              <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
+                <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="contact">
+        <div class="container">
+          <div class="contact-wrapper">
+            <div class="contact-list df jcsb">
+              <div class="contact-left"><img class="contact-img img" src="img/contact.png" alt=""></div>
+              <div class="contact-right df direction">
+                <h2 class="contact-title">Будем ближе</h2><img class="contact-mobile hide" src="img/contact.png" alt="">
+                <div class="contact-subtitle">Присоединяйтесь к нашему сообществу в социальных сетях, чтобы быть в курсе последних новостей, эксклюзивных интервью, обзоров и аналитических материалов. Будьте в тренде вместе с нами!</div>
+                <div class="contact-links"><a class="contact-link btn" href="#" target="_blank">Вконтакте</a><a class="contact-link btn" href="#" target="_blank">Telegram</a><a class="contact-link btn" href="#" target="_blank">Instagram*</a></div>
+                <div class="contact-bottomText">*Instagram Meta Platforms Inc. запрещено на террритории Росии</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-bottom">
+            <div class="contact-bottom__wrapper">
+              <div class="contact-bottom__title">Будьте в курсе последних событий</div>
+              <form class="contact-form">
+                <div class="contact-form__list df fxw jcsb">
+                  <div class="contact-form__left">
+                    <div class="contact-form__input df aic"><b>E-mail:</b>
+                      <input class="df aic" type="email" placeholder="example@555.com" required>
+                    </div>
+                    <div class="contact-form__input df aic"><b>Тема:</b>
+                      <div class="select">
+                        <select>
+                          <option value="Все темы" selected>Все темы</option>
+                          <option value="Все темы">Все темы</option>
+                          <option value="Все темы">Все темы</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-form__right df direction">
+                    <button class="contact-form__btn btn">Подписаться</button>
+                    <div class="contact-form__policy">Нажимая на «Подписаться», я соглашаюсь с&nbsp;<a href="#">обработкой персональных данных</a></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-list row footer-top">
+          <div class="footer-block col"><a class="footer-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a></div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Город</a></li>
+                <li><a href="#">Еда</a></li>
+                <li><a href="#">Герои</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Путешествия</a></li>
+                <li><a href="#">Искусство</a></li>
+                <li><a href="#">Прошлое</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Амбассадоры «Инде»</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-block col">
+            <nav class="footer-nav">
+              <ul>
+                <li><a href="#">Рекламодателям</a></li>
+                <li><a href="#">Вакансии</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-list row footer-center">
+          <div class="footer-block col"></div>
+          <div class="footer-block col">
             <div class="footer-item">
               <div class="footer-item__title">Общий контакт редакции:</div>
               <div class="footer-item__text"><a href="mailto:hello@inde.io">hello@inde.io</a></div>
               <div class="footer-item__text"><a href="#" target="_blank">VK</a><a href="#" target="_blank">Telegram</a></div>
             </div>
+          </div>
+          <div class="footer-block col">
             <div class="footer-item">
               <div class="footer-item__title">Обсудить рекламу:</div>
               <div class="footer-item__text"><a href="mailto:ad@inde.io">ad@inde.io</a></div>
             </div>
+          </div>
+          <div class="footer-block col">
             <div class="footer-item">
               <div class="footer-item__title">Некоммерческие проекты и&nbsp;информационное партнерство:</div>
               <div class="footer-item__text"><a href="mailto:pr@inde.io">pr@inde.io</a></div>
             </div>
           </div>
         </div>
+        <div class="footer-list row footer-bottom">
+          <div class="footer-block col">
+            <div class="footer-bottom__text">Инде. 2015-2024</div>
+          </div>
+          <div class="footer-block col">
+            <div class="footer-bottom__text"><a class="dif link transition" href="#">Соглашения и правила</a></div>
+          </div>
+        </div>
       </div>
-      <form class="mobile-search">
-        <div class="mobile-search__container df direction">
-          <input class="mobile-search__input df aic" type="text" placeholder="Найти">
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div>
-          <div class="mobile-search__results-item"><a class="mobile-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="mobile-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
-        </div>
-      </form>
-      <div class="top-fixed">
-        <div class="green-slider swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-            <div class="swiper-slide">
-              <div class="green-slider__text">ИНДЕ АЛМЕТ «Инде» запустился в Альметьевске!</div>
-            </div>
-          </div>
-        </div>
-        <header class="header">
-          <div class="container">
-            <div class="header-list df aifs">
-              <div class="header-burger cursor transition">
-                <svg>
-                  <use xlink:href="img/sprite.svg#burger"></use>
-                </svg>
-                <svg>
-                  <use xlink:href="img/sprite.svg#close"></use>
-                </svg>
-              </div><a class="header-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a>
-              <div class="header-mobile__search cursor hide transition">
-                <svg>
-                  <use xlink:href="img/sprite.svg#search"></use>
-                </svg>
-                <svg>
-                  <use xlink:href="img/sprite.svg#close"></use>
-                </svg>
-              </div>
-              <div class="header-right">
-                <form class="header-search df aic posr">
-                  <div class="header-search__icon db">
-                    <svg>
-                      <use xlink:href="img/sprite.svg#search"></use>
-                    </svg>
-                  </div>
-                  <input class="header-search__input df aic" type="text" placeholder="Найти">
-                  <div class="header-search__clear posa db cursor"></div>
-                  <button class="header-search__btn df aic jcc link transition cursor">Найти</button>
-                  <div class="header-search__results posa">
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div>
-                    <div class="header-search__results-item"><a class="header-search__results-title db" href="#">Событие года. В Казани откроется новый спортивный комплекс </a><a class="header-search__results-subtitle db" href="#">Город</a></div><a class="header-search__results-btn btn" href="#">Все результаты</a>
-                  </div>
-                </form>
-                <nav class="header-nav">
-                  <ul>
-                    <li><a href="#">Город</a></li>
-                    <li><a href="#">Еда</a></li>
-                    <li><a href="#">Герои</a></li>
-                    <li><a href="#">Путешествия</a></li>
-                    <li><a href="#">Искусство</a></li>
-                    <li><a href="#">Прошлое</a></li>
-                    <li><a href="#">Еще</a>
-                      <ul>
-                        <li><a href="#">Вакансии</a></li>
-                        <li><a href="#">Рекламодателям</a></li>
-                        <li><a href="#">Амбассадоры инде</a></li>
-                        <li><a href="#">О проекте</a></li>
-                        <li><a href="#">Соглашения и правила</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </header>
-      </div>
-      <div class="color-wrapper blue-block index page-single">
-        <div class="left-line"><span class="accent-color">Город</span></div>
-        <main class="main">
-          <div class="container">
-            <div class="main-wrapper posr">
-              <div class="main-slider swiper">
-                <div class="main-next posa cursor"></div>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
-                      <div class="main-item__subtitle">Кирилл Сафронов</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village </div>
-                      <div class="main-item__subtitle">Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Свобода воли vs нейробиология — как люди выбирают?</div>
-                      <div class="main-item__subtitle">Что посмотреть</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">«Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">На улице Тельмана откроется заведение от команды кофейни Botanica</div>
-                      <div class="main-item__subtitle">Кирилл Сафронов</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Рабочий вопрос. Повар в&nbsp;Cho, стилист-консультант в&nbsp;Nude Store и продавец в&nbsp;Surf Village </div>
-                      <div class="main-item__subtitle">Карьерные возможности в&nbsp;Казани с&nbsp;15-го по 22 января.</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Свобода воли vs нейробиология — как люди выбирают?</div>
-                      <div class="main-item__subtitle">Что посмотреть</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">Собственное производство, апсайкл-коллекции и&nbsp;«интеллектуальная женственность» в&nbsp;Corstore17</div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="main-item posr"><a class="main-item__link db posa" href="#"></a>
-                      <div class="main-item__title accent-color">«Нас других не будет» — фильм про Данилу Багрова и Сергея Бодрова</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-        <div class="single-fixed df">
-          <div class="single-fixed__buttons df"><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b1">Введение</a><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b2">Якорь №2</a><a class="single-fixed__buttons-item dif aic link transition scroll" href="#b3">Якорь №3</a></div>
-          <div class="single-fixed__btn bg-color dif aic">Содержание<br>статьи</div>
-        </div>
-        <section class="single single-city">
-          <div class="container">
-            <div class="single-top df direction fxw" id="b1"><img class="single-top__img" src="img/city-banner.png" alt="">
-              <div class="article-center article-margin single-top__wrapper">
-                <div class="single-top__list df fxw jcsb">
-                  <div class="single-top__text accent-color">Анна Абрамова</div>
-                  <div class="single-top__text single-top__date accent-color">11 июля 2024 в 16:19</div>
-                  <div class="single-top__text accent-color">7 минут</div>
-                </div>
-              </div>
-            </div>
-            <div class="single-box index">
-              <div class="single-box__list">
-                <div class="single-cats df aic fxw">
-                  <div class="single-cats__item dif aic">Город</div>
-                  <div class="single-cats__item dif aic">Новое место</div>
-                </div><a class="article-top__share hide aic posa" href="#">SHARE</a>
-              </div>
-              <h1 class="single-title accent-color">В Казани все есть. 41 летняя веранда и терраса города</h1>
-            </div>
-            <div class="single-breadcrumbs df aic jcsb">
-              <ul class="breadcrumbs-list">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Город</a></li>
-                <li>В Казани все есть. 41 летняя веранда и терраса города</li>
-              </ul>
-              <div class="article-top__lang df aic"><a class="active" href="#">РУС</a><span></span><a href="#">ТАТ</a></div>
-            </div>
-            <div class="article-wrapper posr" id="b2">
-              <div class="article-share posa">
-                <div class="article-share__title">SHARE <br>THIS<br>ARTICLE</div>
-                <div class="article-share__links"><a class="article-share__link db link transition" href="#" data-copy="copied text!!!">Сopy link</a><a class="article-share__link db link" href="#">Vk</a><a class="article-share__link db link" href="#">Telegram</a><a class="article-share__link db link" href="#">WhatsApp</a></div>
-              </div>
-              <div class="single-content article-center article-margin">
-                <h2 class="single-content__title accent-color">Рассказы об истории регионального пива, экскурсия по производству и обязательная дегустация</h2>
-                <p>8 августа при заводе «Белый Кремль» в Чистополе открылся фирменный магазин-музей, посвященный пивоварению. Хоть сама история создания татарстанского пива насчитывает 151 год, это первый подобный музей в республике. «Инде» побывал в нем и рассказывает, когда в регионе начали варить крафтовое пиво (спойлер: очень давно), откуда появилась пивоварня «Красный Восток» и как Чистополь остался без света из-за нового пивоваренного завода.</p>
-                <figure class="full-width"><img src="img/city-1.png" alt="">
-                  <figcaption>Фото: Галина Овчинникова</figcaption>
-                </figure>
-                <h3>151 год истории татарстанского пивоварения</h3>
-                <p>Магазин-музей представляет собой здание со стеклянным фасадом, встроенное прямо в цеха пивоваренного завода в индустриальном парке «Чистополь» (1,2 километра от города). Внутри — большая комната, разделенная на две зоны. Первая, поменьше, — это магазин, где продается вся продукция компании «Татспиртпром», включая пиво, сваренное здесь. Остальное пространство отдано музею.</p>
-                <div class="ambassador-slider__wrapper posr">
-                  <div class="ambassador-slider swiper">
-                    <div class="ambassador-arrow ambassador-arrow__prev posr posa cursor"></div>
-                    <div class="ambassador-arrow ambassador-arrow__next posr posa cursor"></div>
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <div class="ambassador-slider__item df aifs">
-                          <div class="ambassador-slider__item-text">Подпись к картинке</div><img class="ambassador-slider__item-img img" src="img/city-2.png" alt="">
-                        </div>
-                      </div>
-                      <div class="swiper-slide">
-                        <div class="ambassador-slider__item df aifs">
-                          <div class="ambassador-slider__item-text">Подпись к картинке</div><img class="ambassador-slider__item-img img" src="img/ambassador.png" alt="">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="ambassador-info">
-                  <div class="ambassador-info__list df aifs">
-                    <div class="ambassador-info__left">
-                      <div class="ambassador-info__title">2023 <br>Сэл Андерсон  (Великобритания)  60&nbsp;минут</div>
-                      <div class="ambassador-info__subtitle">Когда: 10 октября в 19:00 <br>Где: ЦСК «Смена», ул. Б. Шахиди, 7 Вход: 350 ₽</div>
-                    </div>
-                    <div class="ambassador-info__text">Собственное производство, апсайкл-коллекции  и&nbsp;«интеллектуальная женственность» в Corstore17  Собственное производство, апсайкл-коллекции  и «интеллектуальная женственность» в Corstore17 Собственное производство, апсайклколлекции и «интеллектуальная женственность»  в Corstore17 Собственное производство, апсайклколлекции и «интеллектуальная женственность»  в Corstore1</div>
-                  </div>
-                </div>
-                <p>Музей открывает фотозона, в которой отражена история известных в Татарстане и Волжско-Камском регионе пивоварен. Тут можно узнать, что до 1867 года пивоварение у нас было представлено только ремесленными мастерскими, которые варили то, что сегодня бы назвали крафтом: небольшие партии напитков для одной улицы или района. История промышленного производства начинается с выходца из известной немецкой семьи Петцольд, прусского подданного Карла-Вильгельма-Эдуарда-Гейнриха Петцольда, который в 1867 году основал в Казани пивоваренный завод. Его дело продолжил старший сын Оскар Петцольд. Пиво, которое он выпускал на заводе «Восточная Бавария» на улице Тукая в Старо-Татарской слободе, завоевало популярность по всей Казанской губернии и далеко за ее пределами. <br><br>В 1892-м часть производственных мощностей завода Оскара Петцольда выкупают наследники Василия Александрова, знаменитого пивовара из Вятской губернии. В 1914 году завод Александровых получал золотые медали на выставках во Флоренции, Лондоне, Париже, Брюсселе, Амстердаме и Бордо. <br><br>В 1914 году, когда Николай II после начала Первой мировой объявил «сухой закон», казанские производства перепрофилировали и стали выпускать прохладительные напитки — квасы и лимонады. Во время революции 1917 года семья Александровых эмигрировала из страны, а в 1918 году завод передали Совнаркому сельского хозяйства. В 1922 году все казанские пивзаводы советская власть объединила в новое социалистическое предприятие под названием «Красный Восток». А в 1981-м в связи с необходимостью увеличить мощности производства пива в городе Брежневе (сегодня Набережные Челны) построили вторую татарстанскую пивоварню. Ее назвали «Набережночелнинский пивобезалкогольный завод» (сейчас «Булгарпиво»). В 2006-м комплекс заводов «Красный Восток» перекупила турецкая компания Efes, и он превратился в один из четырех филиалов компании в России. А в 1994 году пивоварня «Булгарпиво» перешла под контроль чувашской компании «Букет Чувашии». Теперь нишу локального пивного производства занял проект Татспиртпрома «Белый Кремль». На чистопольском заводе выпускают пять видов пива: «Старая Казань», «Белый Кремль», «Кама», «Жигулевское» и CZ. Первую партию товара отгрузили в начале августа 2018 года.</p>
-                <div class="single-content__blockqoute" id="b3">
-                  <div class="single-content__blockqoute-left"><img class="single-content__blockqoute-img" src="img/blockqoute.png" alt="">
-                    <div class="single-content__blockqoute-name">Мария Смольянинова художница</div>
-                  </div>
-                  <div class="single-content__blockqoute-text">«Идеей открыть при заводе магазин-музей мы обязаны городу. Чистополь находится в центре республики, на берегу Камы: это очень старый город с богатой историей, здесь развит круизный туризм. Музей изначально был внесен в проект завода — мы надеемся, что это поможет городу увеличить поток туристов. На прошлой неделе здесь было до500 посетителей, потому что летом в Татарстан часто приезжают.»</div>
-                </div>
-                <figure class="full-width"><img src="img/city-3.png" alt="">
-                  <figcaption>Фото: Галина Овчинникова</figcaption>
-                </figure>
-                <h4>Основные ингредиенты, которые используются для приготовления пива</h4>
-                <div class="single-city__info posr">
-                  <div class="single-city__info-item df">
-                    <div class="single-city__info-title">ВОДА</div>
-                    <div class="single-city__info-text">Музей открывает фотозона, в которой отражена история известных в Татарстане и Волжско-Камском регионе пивоварен. Тут можно узнать, что до 1867 года пивоварение у нас было представлено только ремесленными мастерскими, которые варили то, что сегодня бы назвали крафтом: небольшие партии напитков для одной улицы или района. История промышленного производства начинается с выходца из известной немецкой семьи Петцольд, прусского подданного Карла-Вильгельма-Эдуарда-Гейнриха Петцольда, который в 1867 году основал в Казани пивоваренный завод. Его дело продолжил старший сын Оскар Петцольд. Пиво, которое он выпускал на заводе «Восточная Бавария» на улице Тукая в Старо-Татарской слободе, завоевало популярность по всей Казанской губернии и далеко за ее пределами.<br><br>В 1892-м часть производственных мощностей завода Оскара Петцольда выкупают наследники Василия Александрова, знаменитого пивовара из Вятской губернии. В 1914 году завод Александровых получал золотые медали на выставках во Флоренции, Лондоне, Париже, Брюсселе, Амстердаме и Бордо.</div>
-                  </div>
-                  <div class="single-city__info-item df">
-                    <div class="single-city__info-title">СОЛОД</div>
-                    <div class="single-city__info-text">Музей открывает фотозона, в которой отражена история известных в Татарстане и Волжско-Камском регионе пивоварен. Тут можно узнать, что до 1867 года пивоварение у нас было представлено только ремесленными мастерскими, которые варили то, что сегодня бы назвали крафтом: небольшие партии напитков для одной улицы или района. История промышленного производства начинается с выходца из известной немецкой семьи Петцольд, прусского подданного Карла-Вильгельма-Эдуарда-Гейнриха Петцольда, который в 1867 году основал в Казани пивоваренный завод. Его дело продолжил старший сын Оскар Петцольд. Пиво, которое он выпускал на заводе «Восточная Бавария» на улице Тукая в Старо-Татарской слободе, завоевало популярность по всей Казанской губернии и далеко за ее пределами.<br><br>В 1892-м часть производственных мощностей завода Оскара Петцольда выкупают наследники Василия Александрова, знаменитого пивовара из Вятской губернии. В 1914 году завод Александровых получал золотые медали на выставках во Флоренции, Лондоне, Париже, Брюсселе, Амстердаме и Бордо.</div>
-                  </div>
-                  <div class="single-city__info-blue">Свобода воли vs  нейробиология  — как люди  выбирают? Свобода  воли vs  нейробиология  — как люди  выбирают? Свобода  воли vs  нейробиология  — как люди  выбирают?</div>
-                </div>
-                <blockquote>«Свобода воли vs нейробиология — как  люди выбирают? Свобода воли vs  нейробиология — как люди выбирают?  Свобода воли vs нейробиология — как  люди выбирают?»</blockquote>
-                <div class="single-city__button df aic jcsb">
-                  <div class="single-city__button-title">Тест: «Какой ты пивовар»</div><a class="single-city__button-right home-blog__item-btn btn" href="#">Начать тест</a>
-                </div>
-                <figure><img src="img/city-4.png" alt="">
-                  <figcaption>Фото: Галина Овчинникова</figcaption>
-                </figure>
-                <div class="single-city__item">
-                  <div class="single-city__title">Стоимость продукции</div>
-                  <div class="single-city__price">
-                    <div class="single-city__price-item">
-                      <div class="single-city__price-left">Светлое пиво</div>
-                      <div class="single-city__price-line"></div>
-                      <div class="single-city__price-right">100 рублей</div>
-                    </div>
-                    <div class="single-city__price-item">
-                      <div class="single-city__price-left">Светлое пиво</div>
-                      <div class="single-city__price-line"></div>
-                      <div class="single-city__price-right">120 рублей</div>
-                    </div>
-                    <div class="single-city__price-item">
-                      <div class="single-city__price-left">Безалкогольное пиво</div>
-                      <div class="single-city__price-line"></div>
-                      <div class="single-city__price-right">140 рублей</div>
-                    </div>
-                    <div class="single-city__price-item">
-                      <div class="single-city__price-left">Разливное пиво</div>
-                      <div class="single-city__price-line"></div>
-                      <div class="single-city__price-right">200 рублей</div>
-                    </div>
-                    <div class="single-city__price-item">
-                      <div class="single-city__price-left">Живое пиво</div>
-                      <div class="single-city__price-line"></div>
-                      <div class="single-city__price-right">200 рублей</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="single-city__item">
-                  <div class="single-city__title">Где находится</div>
-                  <div class="single-city__contact">
-                    <div class="single-city__contact-item df aifs">
-                      <div class="single-city__contact-title">АДРЕС</div>
-                      <div class="single-city__contact-text">Индустриальный парк «Чистополь» (1,2 километра от города Чистополя в&nbsp;сторону поселка Юлдуз)</div>
-                    </div>
-                    <div class="single-city__contact-item df aifs">
-                      <div class="single-city__contact-title">РЕЖИМ <br>РАБОТЫ</div>
-                      <div class="single-city__contact-text">Ежедневно с 10:00 до 22:00 <br>Экскурсии ежедневно с 10:00 до 17:00</div>
-                    </div>
-                    <div class="single-city__contact-item df aifs">
-                      <div class="single-city__contact-title">ТЕЛЕФОН</div>
-                      <div class="single-city__contact-text"><a href="tel:+79272443666">+7 (927) 244-36-66</a></div>
-                    </div>
-                    <div class="single-city__contact-item df aifs">
-                      <div class="single-city__contact-title">ЦЕНА</div>
-                      <div class="single-city__contact-text">входной билет с экскурсией — 100 ₽, <br>входной билет с экскурсией и дегустацией — 250 ₽</div>
-                    </div>
-                  </div>
-                </div>
-                <figure class="full-width"><img src="img/city-5.png" alt="">
-                  <figcaption>Фото: Галина Овчинникова</figcaption>
-                </figure>
-              </div>
-              <div class="article-center article-margin">
-                <div class="single-bottomText">Обложка: Kinopoisk; фото: 1 — Mentalfilmfest; 2 — Reactor-art; 3 — Kazan-kremlin; 4 — Hor.viktorgolumbevskii; 5 — Tg; 6 — YouTube; 7 — Vk; 8 — Vk; 9  — Vk; 10 — Tg; 11 — Vk; 12 — Kinopoisk; 13 — Kazan-tuz; 14 — Ugolkazan; 15 — Ugolkazan; 16 — Belova-art-gallery; 17 — Vk; 18 — Vk</div>
-              </div>
-              <div class="article-center article-margin">
-                <div class="article-soc df aifs jcsb">
-                  <div class="article-soc__title">Поделиться статьей:</div>
-                  <div class="article-soc__links df aic"><a class="contact-link btn" href="#" target="_blank">Вконтакте</a><a class="contact-link btn" href="#" target="_blank">Telegram</a><a class="contact-link btn" href="#" target="_blank">Instagram*</a></div>
-                </div>
-                <div class="article-bottom df aic jcsb"><a class="article-back dif aic link posr transition" href="#">Ко всем статьям</a>
-                  <div class="article-bottom__text">*Instagram — деятельность <br>на территории РФ запрещена</div>
-                </div>
-              </div>
-              <div class="article-other posa">
-                <div class="article-other__title accent-color">Далее по теме:</div>
-                <div class="article-other__list">
-                  <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
-                    <div class="article-other__item-title accent-color">Коктейль за сторис в Roof Gastro Bar, летняя  распродажа в NYX и акция на книги от Ozon</div>
-                  </div>
-                  <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
-                    <div class="article-other__item-title accent-color">Свобода воли vs  нейробиология—  как люди выбирают? </div>
-                  </div>
-                  <div class="article-other__item posr"><a class="article-other__item-link db posa" href="#"></a>
-                    <div class="article-other__item-title accent-color">Сгущенка с нори, сырники  с томатным джемом и пицца  с кониной</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <section class="other-blog">
-        <div class="container">
-          <div class="home-blog__title center">Может быть инетресно</div>
-          <div class="city-items row">
-            <div class="city-items__block col">
-              <div class="home-blog__box posr df direction">
-                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-3.png" alt=""></a>
-                <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-            </div>
-            <div class="city-items__block col">
-              <div class="home-blog__box posr df direction">
-                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-2.png" alt=""></a>
-                <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Еда, история и природа. 5 причин поехать в Набережные Челны в&nbsp;августе</a><a class="home-blog__item-btn btn" href="#">Перейти</a></div>
-              </div>
-            </div>
-            <div class="city-items__block col">
-              <div class="home-blog__box posr df direction">
-                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a>
-                <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">«Альметьевск исторический: архитектурная симфония барокко и классицизма»</a>
-                  <div class="home-blog__box-subtitle">Размышления путешественника о городе.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-            </div>
-            <div class="city-items__block col">
-              <div class="home-blog__box posr df direction">
-                <div class="home-blog__cat dif aic posa">Путешествия</div><a class="home-blog__box-img posr overflow db" href="#"><img class="img" src="img/blog-4.png" alt=""></a>
-                <div class="home-blog__box-content"><a class="home-blog__box-title db link" href="#">Россияне проявляют интерес к изучению языков народов при поездках по стране</a>
-                  <div class="home-blog__box-subtitle">Треть путешественников уверены, что знакомство с национальным языком региона важно для хорошей поездки.</div><a class="home-blog__item-btn btn" href="#">Перейти</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="contact">
-          <div class="container">
-            <div class="contact-wrapper">
-              <div class="contact-list df jcsb">
-                <div class="contact-left"><img class="contact-img img" src="img/contact.png" alt=""></div>
-                <div class="contact-right df direction">
-                  <h2 class="contact-title">Будем ближе</h2><img class="contact-mobile hide" src="img/contact.png" alt="">
-                  <div class="contact-subtitle">Присоединяйтесь к нашему сообществу в социальных сетях, чтобы быть в курсе последних новостей, эксклюзивных интервью, обзоров и аналитических материалов. Будьте в тренде вместе с нами!</div>
-                  <div class="contact-links"><a class="contact-link btn" href="#" target="_blank">Вконтакте</a><a class="contact-link btn" href="#" target="_blank">Telegram</a><a class="contact-link btn" href="#" target="_blank">Instagram*</a></div>
-                  <div class="contact-bottomText">*Instagram Meta Platforms Inc. запрещено на террритории Росии</div>
-                </div>
-              </div>
-            </div>
-            <div class="contact-bottom">
-              <div class="contact-bottom__wrapper">
-                <div class="contact-bottom__title">Будьте в курсе последних событий</div>
-                <form class="contact-form">
-                  <div class="contact-form__list df fxw jcsb">
-                    <div class="contact-form__left">
-                      <div class="contact-form__input df aic"><b>E-mail:</b>
-                        <input class="df aic" type="email" placeholder="example@555.com" required>
-                      </div>
-                      <div class="contact-form__input df aic"><b>Тема:</b>
-                        <div class="select">
-                          <select>
-                            <option value="Все темы" selected>Все темы</option>
-                            <option value="Все темы">Все темы</option>
-                            <option value="Все темы">Все темы</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="contact-form__right df direction">
-                      <button class="contact-form__btn btn">Подписаться</button>
-                      <div class="contact-form__policy">Нажимая на «Подписаться», я соглашаюсь с&nbsp;<a href="#">обработкой персональных данных</a></div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
-      </section>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-list row footer-top">
-            <div class="footer-block col"><a class="footer-logo dif link" href="index.html"><img class="img" src="img/logo.svg" alt=""></a></div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">Город</a></li>
-                  <li><a href="#">Еда</a></li>
-                  <li><a href="#">Герои</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">Путешествия</a></li>
-                  <li><a href="#">Искусство</a></li>
-                  <li><a href="#">Прошлое</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">О проекте</a></li>
-                  <li><a href="#">Амбассадоры «Инде»</a></li>
-                </ul>
-              </nav>
-            </div>
-            <div class="footer-block col">
-              <nav class="footer-nav">
-                <ul>
-                  <li><a href="#">Рекламодателям</a></li>
-                  <li><a href="#">Вакансии</a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="footer-line"></div>
-          <div class="footer-list row footer-center">
-            <div class="footer-block col"></div>
-            <div class="footer-block col">
-              <div class="footer-item">
-                <div class="footer-item__title">Общий контакт редакции:</div>
-                <div class="footer-item__text"><a href="mailto:hello@inde.io">hello@inde.io</a></div>
-                <div class="footer-item__text"><a href="#" target="_blank">VK</a><a href="#" target="_blank">Telegram</a></div>
-              </div>
-            </div>
-            <div class="footer-block col">
-              <div class="footer-item">
-                <div class="footer-item__title">Обсудить рекламу:</div>
-                <div class="footer-item__text"><a href="mailto:ad@inde.io">ad@inde.io</a></div>
-              </div>
-            </div>
-            <div class="footer-block col">
-              <div class="footer-item">
-                <div class="footer-item__title">Некоммерческие проекты и&nbsp;информационное партнерство:</div>
-                <div class="footer-item__text"><a href="mailto:pr@inde.io">pr@inde.io</a></div>
-              </div>
-            </div>
-          </div>
-          <div class="footer-list row footer-bottom">
-            <div class="footer-block col">
-              <div class="footer-bottom__text">Инде. 2015-2024</div>
-            </div>
-            <div class="footer-block col">
-              <div class="footer-bottom__text"><a class="dif link transition" href="#">Соглашения и правила</a></div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <div class="modals">
-        <div class="modal" id="success" data-modal>
-          <div class="modal-overlay" data-modal-overlay></div>
-          <div class="modal-list">
-            <div class="modal-container">
-              <div class="modal-close" data-modal-close></div>
-              <svg class="modal-icon">
-                <use xlink:href="img/sprite.svg#modal-check"></use>
-              </svg>
-              <div class="center">
-                <div class="modal-title">Спасибо!</div>
-                <div class="modal-subtitle">Ваша заявка успешно отправлена</div>
-              </div><img class="modal-logo img" src="img/logo.svg" alt="">
-            </div>
+    </footer>
+    <div class="modals">
+      <div class="modal" id="success" data-modal>
+        <div class="modal-overlay" data-modal-overlay></div>
+        <div class="modal-list">
+          <div class="modal-container">
+            <div class="modal-close" data-modal-close></div>
+            <svg class="modal-icon">
+              <use xlink:href="img/sprite.svg#modal-check"></use>
+            </svg>
+            <div class="center">
+              <div class="modal-title">Спасибо!</div>
+              <div class="modal-subtitle">Ваша заявка успешно отправлена</div>
+            </div><img class="modal-logo img" src="img/logo.svg" alt="">
           </div>
         </div>
       </div>
     </div>
-    <script src="libs/swiper/swiper-bundle.min.js"></script>
-    <script src="libs/nice-select2/nice-select2.js"></script>
-    <script src="libs/fslightbox.js"></script>
-    <script src="js/main.js?v=1.14"></script>
-  </body>
+  </div>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/nice-select2/nice-select2.js"></script>
+  <script src="libs/fslightbox.js"></script>
+  <script src="js/main.js?v=1.14"></script>
+</body>
+
 </html>
